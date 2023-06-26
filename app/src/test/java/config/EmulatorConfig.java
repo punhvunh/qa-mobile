@@ -3,9 +3,6 @@ package config;
 import org.aeonbits.owner.Config;
 
 
-/**
- * Чтение ключей из emulator.properties
- */
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties", //чтение env

@@ -18,9 +18,6 @@ import java.net.URL;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * Класс для инициализации AndroidDriver
- */
 public class EmulatorDriver implements WebDriverProvider {
     protected static AndroidDriver driver;
     //чтение пропертей
@@ -31,10 +28,6 @@ public class EmulatorDriver implements WebDriverProvider {
     private static final String APP = ConfigReader.emulatorConfig.app();
     private static final String URL = ConfigReader.emulatorConfig.remoteURL();
 
-    /**
-     * Валидация URL ссылки из пропертей
-     * @return
-     */
     public static URL getUrl() {
         try {
             return new URL(URL);
@@ -43,11 +36,6 @@ public class EmulatorDriver implements WebDriverProvider {
         }
     }
 
-    /**
-     * Получаем абсолютный путь от рутового путя
-     * @param filePath путь к файлу из корня прокта
-     * @return
-     */
     private String getAbsolutePath(String filePath) {
         File file = new File(filePath);
         assertTrue(file.exists(), filePath + " not found");//проверяем что файл существует
@@ -55,9 +43,6 @@ public class EmulatorDriver implements WebDriverProvider {
         return file.getAbsolutePath();
     }
 
-    /**
-     * Получаем AppPackage и AppActivity из чтения apk файла
-     */
     private void initPackageAndActivity() {
         ApkInfoHelper helper = new ApkInfoHelper();
         //тернарное условие, если app_package не задано в пропертях, достаем из из apk
@@ -66,11 +51,6 @@ public class EmulatorDriver implements WebDriverProvider {
     }
 
 
-    /**
-     * Создает appium сессиюю AndroidDriver
-     * @param desiredCapabilities настройки для создания сесии
-     * @return сессия AndroidDriver
-     */
     @Nonnull
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {

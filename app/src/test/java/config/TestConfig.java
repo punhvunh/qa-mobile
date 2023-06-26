@@ -2,9 +2,6 @@ package config;
 
 import org.aeonbits.owner.Config;
 
-/**
- * Чтение ключей из test.properties
- */
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
         "system:properties", //читаем env

@@ -20,7 +20,6 @@ public class LoginPageTests extends BaseTest {
     @BeforeAll
     public static void init() {
         loginPage = new LogInPage();
-//        Configuration.timeout = 2000;
     }
 
     @Description("Проверям название заголовка")

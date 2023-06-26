@@ -15,9 +15,6 @@ import org.junit.jupiter.api.BeforeEach;
 import io.qameta.allure.Allure;
 import io.qameta.allure.selenide.AllureSelenide;
 
-/**
- * Базовый тестовый класс
- */
 public class BaseTest {
 
     @BeforeAll
@@ -32,17 +29,11 @@ public class BaseTest {
         Configuration.timeout = 10000;
     }
 
-    /**
-     * Перед каждый тестом открываем приложение
-     */
     @BeforeEach
     public void startDriver() {
         step("Открыть приложение", (Allure.ThrowableRunnableVoid) Selenide::open);
     }
 
-    /**
-     * После каждого теста закрываем AndroidDriver чтобы тест атомарным был
-     */
     @AfterEach
     public void afterEach() {
         step("Закрыть приложение", Selenide::closeWebDriver);
