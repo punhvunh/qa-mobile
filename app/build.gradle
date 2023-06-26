@@ -13,7 +13,6 @@ def allureVersion = "2.20.0",
 
 
 dependencies {
-    testImplementation 'com.github.romankh3:image-comparison:4.4.0'
     testImplementation(
             "junit:junit:$junitVersion",
             "io.qameta.allure:allure-junit5:$allureVersion",
