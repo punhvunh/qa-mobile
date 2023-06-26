@@ -16,6 +16,7 @@ public class DeviceHelper {
      * Выполняет bash скрипт с гарантированием возрата полной информации из консоли
      * @param command bash скрипт
      * @return результат скрипта
+     * Чтение результата консольной команды при попощи FutertTask
      * @throws IOException
      * @throws ExecutionException
      * @throws InterruptedException
