@@ -20,7 +20,6 @@ dependencies {
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:7.6.0",
             "org.aeonbits.owner:owner:1.0.12",
-            "io.rest-assured:rest-assured:4.4.0",
             "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:$slf4jVersion",
