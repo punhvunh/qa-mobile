@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id "io.qameta.allure" version "2.10.0"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+def allureVersion = "2.20.0",
+    junitJupiterVersion = "5.8.2",
+    junitVersion = "4.13.2",
+    slf4jVersion = "1.7.32"
+
+
+dependencies {
+    testImplementation 'com.github.romankh3:image-comparison:4.4.0'
+    testImplementation(
+            "junit:junit:$junitVersion",
+            "io.qameta.allure:allure-junit5:$allureVersion",
+            "com.codeborne:selenide:5.25.0",
+            "io.qameta.allure:allure-selenide:$allureVersion",
+            "io.appium:java-client:7.6.0",
+            "org.aeonbits.owner:owner:1.0.12",
+            "io.rest-assured:rest-assured:4.4.0",
+            "org.junit.jupiter:junit-jupiter-api:$junitJupiterVersion")
+    testRuntimeOnly(
+            "org.slf4j:slf4j-simple:$slf4jVersion",
+            "org.junit.jupiter:junit-jupiter-engine:$junitJupiterVersion")
+}
+
+allure {
+    version = allureVersion
+    autoconfigure = true
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "failed"
+            exceptionFormat "short"
+        }
+    }
+}
