@@ -107,7 +107,7 @@ public class LogInPage extends BasePage {
     }
 
     @Step("Кликаем на кнопку Показать пароль")
-    public LogInPage clicksOnShowPasswordButton(){
+    public LogInPage clicksOnShowPasswordButton() {
         elementIsVisible(showPasswordButton).click();
         return this;
     }

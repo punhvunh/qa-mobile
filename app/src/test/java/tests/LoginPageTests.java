@@ -1,9 +1,10 @@
 package tests;
 
-import com.codeborne.selenide.Selenide;
+import static locators.LogInPageLocators.fieldPlaceholder;
 import static locators.LogInPageLocators.loginField;
 import static locators.LogInPageLocators.passwordField;
-import static locators.LogInPageLocators.fieldPlaceholder;
+
+import com.codeborne.selenide.Selenide;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -72,7 +73,7 @@ public class LoginPageTests extends BaseTest {
     @Description("Пробуем авторизоваться используя неправильный пароль")
     @Test
     public void testTriesToLogInWithTheWrongPassword() {
-        loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD.getValue(), LoginPageConstants.INCORRECT_LOGIN.getValue());
+        loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD.getValue(), LoginPageConstants.CORRECT_LOGIN.getValue());
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD.getValue(), LoginPageConstants.INCORRECT_PASSWORD.getValue());
         loginPage.clicksOnLogInButtonAndSeesError(LoginPageConstants.INCORRECT_DATA_ENTERED_ERROR.getValue());
     }

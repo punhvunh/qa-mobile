@@ -16,11 +16,11 @@ public class BasePage {
         return element.shouldBe(Condition.hidden);
     }
 
-    public static String getsTextAttributeFromElement(SelenideElement element){
+    public static String getsTextAttributeFromElement(SelenideElement element) {
         return element.getText();
     }
 
-    public static void typesTextIntoField(SelenideElement element, String text){
+    public static void typesTextIntoField(SelenideElement element, String text) {
         element.sendKeys(text);
     }
 

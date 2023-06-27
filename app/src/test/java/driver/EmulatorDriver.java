@@ -1,22 +1,22 @@
 package driver;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import com.codeborne.selenide.WebDriverProvider;
 
-import config.ConfigReader;
-import helper.ApkInfoHelper;
-import io.appium.java_client.android.AndroidDriver;
-
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
-import javax.annotation.Nonnull;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import javax.annotation.Nonnull;
+
+import config.ConfigReader;
+import helper.ApkInfoHelper;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
 
 public class EmulatorDriver implements WebDriverProvider {
     protected static AndroidDriver driver;
@@ -55,7 +55,7 @@ public class EmulatorDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
         initPackageAndActivity();
-        desiredCapabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS,true);
+        desiredCapabilities.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
         desiredCapabilities.setCapability("deviceName", DEVICE_NAME);
         desiredCapabilities.setCapability("platformName", PLATFORM_NAME);
 
