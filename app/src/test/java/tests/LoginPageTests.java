@@ -7,6 +7,8 @@ import static locators.LogInPageLocators.fieldPlaceholder;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import constants.LoginPageConstants;
 import io.qameta.allure.Description;
@@ -50,10 +52,11 @@ public class LoginPageTests extends BaseTest {
     }
 
     @Description("Авторизируемcя в приложении используя логин и пароль")
-    @Test
-    public void testLogInToTheApplicationUsingUsernameAndPassword() {
-        loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.LOGIN_FIELD.getValue(), LoginPageConstants.CORRECT_LOGIN.getValue());
-        loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.PASSWORD_FIELD.getValue(), LoginPageConstants.CORRECT_PASSWORD.getValue());
+    @ParameterizedTest
+    @CsvSource("Login, Password")
+    public void testLogInToTheApplicationUsingUsernameAndPassword(String login, String password) {
+        loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.LOGIN_FIELD.getValue(), login);
+        loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.PASSWORD_FIELD.getValue(), password);
         loginPage.clicksOnLogInButton();
         loginPage.doesNotSeeLogInButton();
     }
@@ -138,9 +141,10 @@ public class LoginPageTests extends BaseTest {
     }
 
     @Description("Проверям название заголовка после авторизации")
-    @Test
-    public void testChecksTheHeaderNameAfterLogIn() {
-        testLogInToTheApplicationUsingUsernameAndPassword();
+    @ParameterizedTest
+    @CsvSource("Login, Password")
+    public void testChecksTheHeaderNameAfterLogIn(String login, String password) {
+        testLogInToTheApplicationUsingUsernameAndPassword(login, password);
         Selenide.sleep(2000);
         loginPage.checksFieldLabelsAfterLogIn(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST_EXECUTED.getValue());
     }
