@@ -80,6 +80,19 @@ public class LogInPage extends BasePage {
         return this;
     }
 
+    @Step("Проверяем количество символов")
+    public LogInPage checksAmountOfCharacters(String maxCharacters ){
+        int actualLength = maxCharacters.length();
+        if (actualLength > 50) {
+            System.out.println("Количество символов больше 50");
+        } else if (actualLength < 50) {
+            System.out.println("Количество символов меньше 50");
+        } else {
+            System.out.println("Количество символов равно 50");
+        }
+        return this;
+    }
+
     @Step("Проверяем что поле заполнено")
     public LogInPage checksThatFillIsNotEmpty(String text, SelenideElement fieldElement) {
         String actualText = getsTextAttributeFromElement(fieldElement);
