@@ -62,7 +62,7 @@ public class LogInPage extends BasePage {
 
     @Step("Заполняем поле {fieldName} посимвольно")
     public LogInPage fillsInTheFieldCharacterByCharacter(String fieldName, String value) {
-        SelenideElement fieldElement = switch (fieldName){
+        SelenideElement fieldElement = switch (fieldName) {
             case "Логин" -> loginField;
             case "Пароль" -> passwordField;
             default ->
@@ -74,7 +74,7 @@ public class LogInPage extends BasePage {
     }
 
     @Step("Проверяем количество символов")
-    public LogInPage checksAmountOfCharacters(String maxCharacters ){
+    public LogInPage checksAmountOfCharacters(String maxCharacters) {
         int actualLength = maxCharacters.length();
         if (actualLength > 50) {
             System.out.println("Количество символов больше 50");

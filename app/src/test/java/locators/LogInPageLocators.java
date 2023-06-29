@@ -8,21 +8,23 @@ import io.appium.java_client.MobileBy;
 
 public class LogInPageLocators {
 
-    public static final SelenideElement loginField = $(MobileBy.id("com.alfabank.qapp:id/etUsername"));
+    private static final String alfaBankId = "com.alfabank.qapp:id/";
 
-    public static final SelenideElement passwordField = $(MobileBy.id("com.alfabank.qapp:id/etPassword"));
+    public static final SelenideElement loginField = $(MobileBy.id(alfaBankId+ "etUsername"));
 
-    public static final SelenideElement fieldPlaceholder = $(MobileBy.id("com.alfabank.qapp:id/textinput_placeholder"));
+    public static final SelenideElement passwordField = $(MobileBy.id(alfaBankId + "etPassword"));
 
-    public static final SelenideElement confirmButton = $(MobileBy.id("com.alfabank.qapp:id/btnConfirm"));
+    public static final SelenideElement fieldPlaceholder = $(MobileBy.id(alfaBankId + "textinput_placeholder"));
 
-    public static final SelenideElement headerLogInAlfaTest = $(MobileBy.id("com.alfabank.qapp:id/tvTitle"));
+    public static final SelenideElement confirmButton = $(MobileBy.id(alfaBankId + "btnConfirm"));
+
+    public static final SelenideElement headerLogInAlfaTest = $(MobileBy.id(alfaBankId + "tvTitle"));
 
     public static final SelenideElement headerLogInAlfaTestExecuted = $(MobileBy.xpath("//android.widget.FrameLayout//android.view.ViewGroup//android.widget.TextView"));
 
-    public static final SelenideElement incorrectDataEnteredError = $(MobileBy.id("com.alfabank.qapp:id/tvError"));
+    public static final SelenideElement incorrectDataEnteredError = $(MobileBy.id(alfaBankId+ "tvError"));
     public static final SelenideElement incorrectDataEnteredErrorUnderFieldLogin = $(MobileBy.id(""));
 
-    public static final SelenideElement showPasswordButton = $(MobileBy.id("com.alfabank.qapp:id/text_input_end_icon"));
+    public static final SelenideElement showPasswordButton = $(MobileBy.id(alfaBankId + "text_input_end_icon"));
 
 }
