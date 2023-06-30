@@ -93,6 +93,7 @@ public class LogInPage extends BasePage {
         return this;
     }
 
+    @Step("Проверяем что поле пустое")
     public LogInPage checksThatFieldIsEmpty(SelenideElement fieldElement, SelenideElement placeholder) {
         elementIsVisible(fieldElement).click();
         String actualText = getsTextAttributeFromElement(placeholder);
