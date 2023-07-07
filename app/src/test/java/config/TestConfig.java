@@ -9,6 +9,10 @@ import org.aeonbits.owner.Config;
 })
 public interface TestConfig extends Config {
 
+    @Key("updateScreenshots")
+    @DefaultValue("false")
+    boolean isScreenshotsNeedToUpdate();
+
     @Key("deviceHost")
     String deviceHost();
 }

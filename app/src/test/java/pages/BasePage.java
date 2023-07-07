@@ -1,12 +1,22 @@
 package pages;
 
+import static com.codeborne.selenide.Selenide.$;
+
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 
 import org.openqa.selenium.interactions.Actions;
 
+import java.io.File;
+
+import io.appium.java_client.MobileBy;
+
 public class BasePage {
+
+    public File fullPageScreenshot(){
+        return $(MobileBy.xpath("//hierarchy//android.widget.FrameLayout//android.view.ViewGroup")).screenshot();
+    }
 
     public static SelenideElement elementIsVisible(SelenideElement element) {
         return element.shouldBe(Condition.visible);
