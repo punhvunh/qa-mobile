@@ -28,7 +28,7 @@ public class ScreenshotTests extends BaseTest{
      * Надо чтобы в test.properties было значение true у updateScreenshots
      */
     @Test
-    public void testLoginPageScreenshot(){
+    void testLoginPageScreenshot(){
         File loginPageScreenshot = new LogInPage()
                 .checksTheHeaderName(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST)
                 .fullPageScreenshot();;
@@ -41,7 +41,7 @@ public class ScreenshotTests extends BaseTest{
      * Запускать вторым, чтобы увидеть различия
      */
     @Test
-    public void testLoginPageScreenshotFail(){
+    void testLoginPageScreenshotFail(){
         File loginPageScreenshot = new LogInPage()
                 .fullPageScreenshot();
         assertScreenshot(loginPageScreenshot, "testLoginPageScreenshot()");

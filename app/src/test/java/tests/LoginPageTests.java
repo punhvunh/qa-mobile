@@ -27,27 +27,27 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Проверям название заголовка")
     @Test
-    public void testChecksTheHeaderName() {
+    void testChecksTheHeaderName() {
         loginPage.checksTheHeaderName(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST);
     }
 
 
     @Description("Проверяем лэйблы полей")
     @Test
-    public void testChecksFieldLabels() {
+    void testChecksFieldLabels() {
         loginPage.checksFieldLabels(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.LOGIN_FIELD);
         loginPage.checksFieldLabels(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.PASSWORD_FIELD);
     }
 
     @Description("Проверям название кнопки")
     @Test
-    public void testChecksButtonName() {
+    void testChecksButtonName() {
         loginPage.checksButtonName(LoginPageConstants.LOGIN);
     }
 
     @Description("Проверям отсутсвие значений по умолчанию в полях логин и пароль")
     @Test
-    public void testChecksThatFieldAreEmptyAfterClickingOnThem() {
+    void testChecksThatFieldAreEmptyAfterClickingOnThem() {
         loginPage.checksThatFieldIsEmpty(loginField, fieldPlaceholder);
         loginPage.checksThatFieldIsEmpty(passwordField, fieldPlaceholder);
     }
@@ -55,7 +55,7 @@ public class LoginPageTests extends BaseTest {
     @Description("Авторизируемcя в приложении используя логин и пароль")
     @ParameterizedTest
     @CsvSource("Login, Password")
-    public void testLogInToTheApplicationUsingUsernameAndPassword(String login, String password) {
+    void testLogInToTheApplicationUsingUsernameAndPassword(String login, String password) {
         loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.LOGIN_FIELD, login);
         loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.PASSWORD_FIELD, password);
         loginPage.clicksOnLogInButton();
@@ -64,7 +64,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Пробуем авторизоваться используя неправильный логин")
     @Test
-    public void testTriesToLogInWithTheWrongLogin() {
+    void testTriesToLogInWithTheWrongLogin() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.INCORRECT_LOGIN);
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.CORRECT_PASSWORD);
         loginPage.clicksOnLogInButtonAndSeesError(LoginPageConstants.INCORRECT_DATA_ENTERED_ERROR);
@@ -72,7 +72,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Пробуем авторизоваться используя неправильный пароль")
     @Test
-    public void testTriesToLogInWithTheWrongPassword() {
+    void testTriesToLogInWithTheWrongPassword() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.CORRECT_LOGIN);
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.INCORRECT_PASSWORD);
         loginPage.clicksOnLogInButtonAndSeesError(LoginPageConstants.INCORRECT_DATA_ENTERED_ERROR);
@@ -81,7 +81,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод корректных символов в поле Логин")
     @Test
-    public void testEntersValidCharactersInLoginField() {
+    void testEntersValidCharactersInLoginField() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.VALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS);
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.VALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
         loginPage.doesNotSeeErrorAfterTryingToLogInUsingCorrectDataUnderField();
@@ -89,7 +89,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод максимально допустимого количества символов в поле Логин")
     @Test
-    public void testEntersMaxCharacterLimitInLoginField() {
+    void testEntersMaxCharacterLimitInLoginField() {
         loginPage.checksAmountOfCharacters(LoginPageConstants.MAX_CHARACTERS);
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.MAX_CHARACTERS);
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, loginField);
@@ -98,7 +98,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод некорректных символов в поле Логин")
     @Test
-    public void testEntersInvalidCharactersInLoginField() {
+    void testEntersInvalidCharactersInLoginField() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.INVALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS);
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.INVALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
@@ -106,7 +106,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод превышающего максимальное количество символов в поле Логин")
     @Test
-    public void testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField() {
+    void testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField() {
         loginPage.checksAmountOfCharacters(LoginPageConstants.MAX_CHARACTERS + "X");
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.MAX_CHARACTERS + "X");
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", loginField);
@@ -115,7 +115,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод максимально допустимого количества символов в поле Пароль")
     @Test
-    public void testEntersMaxCharacterLimitInPasswordField() {
+    void testEntersMaxCharacterLimitInPasswordField() {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.MAX_CHARACTERS);
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, passwordField);
         loginPage.doesNotSeeErrorAfterTryingToLogInUsingCorrectDataUnderField();
@@ -123,7 +123,7 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Ввод превышающего максимальное количество символов в поле Логин")
     @Test
-    public void testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField() {
+    void testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField() {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.MAX_CHARACTERS + "X");
         loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", passwordField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
@@ -131,14 +131,14 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Проверяем видимость пароля после нажатия на кнопку Показать пароль")
     @Test
-    public void testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton() {
+    void testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton() {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.CORRECT_PASSWORD);
         loginPage.clicksOnShowPasswordButton();
     }
 
     @Description("Проверяем не видимость пароля после повторного нажатия на кнопку Показать пароль")
     @Test
-    public void testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton() {
+    void testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton() {
         testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton();
         loginPage.clicksOnShowPasswordButton();
     }
@@ -146,7 +146,7 @@ public class LoginPageTests extends BaseTest {
     @Description("Проверям название заголовка после авторизации")
     @ParameterizedTest
     @CsvSource("Login, Password")
-    public void testChecksTheHeaderNameAfterLogIn(String login, String password) {
+    void testChecksTheHeaderNameAfterLogIn(String login, String password) {
         testLogInToTheApplicationUsingUsernameAndPassword(login, password);
         Selenide.sleep(2000);
         loginPage.checksFieldLabelsAfterLogIn(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST_EXECUTED);
