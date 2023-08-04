@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 import config.ConfigReader;
 
 public class ApkInfoHelper {
-    private String apkInfo;
+    private final String apkInfo;
 
     public ApkInfoHelper() {
         String app = ConfigReader.emulatorConfig.app(); //читаем путь к apk из пропертей
@@ -19,7 +19,7 @@ public class ApkInfoHelper {
         }
         try {
             //вызываем bash команду aapt dumb banding путь к apk, чтобы прочитать AndroidManifest.xml из apk файла
-            apkInfo = executeSh("aapt dumb badging " + ConfigReader.emulatorConfig.app());
+            apkInfo = executeSh("at dumb badging " + ConfigReader.emulatorConfig.app());
         } catch (IOException | InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }
