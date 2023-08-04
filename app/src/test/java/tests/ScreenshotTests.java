@@ -1,20 +1,21 @@
 package tests;
 
-import constants.LoginPageConstants;
-import pages.LogInPage;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
 
 import java.io.File;
 
-public class ScreenshotTests extends BaseTest{
+import constants.LoginPageConstants;
+import pages.LogInPage;
+
+class ScreenshotTests extends BaseTest {
 
     private TestInfo testInfo;
 
     /**
      * Перед каждым тестом инициализация тестовой информации
+     *
      * @param testInfo информация из junit5
      */
     @BeforeEach
@@ -28,10 +29,10 @@ public class ScreenshotTests extends BaseTest{
      * Надо чтобы в test.properties было значение true у updateScreenshots
      */
     @Test
-    public void testLoginPageScreenshot(){
+    void testLoginPageScreenshot() {
         File loginPageScreenshot = new LogInPage()
                 .checksTheHeaderName(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST)
-                .fullPageScreenshot();;
+                .fullPageScreenshot();
         assertScreenshot(loginPageScreenshot, testInfo.getDisplayName());
     }
 
@@ -41,7 +42,7 @@ public class ScreenshotTests extends BaseTest{
      * Запускать вторым, чтобы увидеть различия
      */
     @Test
-    public void testLoginPageScreenshotFail(){
+    void testLoginPageScreenshotFail() {
         File loginPageScreenshot = new LogInPage()
                 .fullPageScreenshot();
         assertScreenshot(loginPageScreenshot, "testLoginPageScreenshot()");
