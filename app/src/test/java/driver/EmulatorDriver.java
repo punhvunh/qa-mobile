@@ -36,9 +36,9 @@ public class EmulatorDriver implements WebDriverProvider {
         }
     }
 
-    private String getAbsolutePath() {
-        File file = new File(EmulatorDriver.APP);
-        assertTrue(file.exists(), EmulatorDriver.APP + " not found");//проверяем что файл существует
+    private String getAbsolutePath(String filePath) {
+        File file = new File(filePath);
+        assertTrue(file.exists(), filePath + " not found");//проверяем что файл существует
 
         return file.getAbsolutePath();
     }
@@ -62,7 +62,7 @@ public class EmulatorDriver implements WebDriverProvider {
         desiredCapabilities.setCapability("appPackage", APP_PACKAGE);
         desiredCapabilities.setCapability("appActivity", APP_ACTIVITY);
 
-        desiredCapabilities.setCapability("app", getAbsolutePath());
+        desiredCapabilities.setCapability("app", getAbsolutePath(APP));
         driver = new AndroidDriver<>(getUrl(), desiredCapabilities);
         return driver;
     }
