@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import constants.LoginPageConstants;
 import io.qameta.allure.Description;
-import pages.LogInPage;
+import locators.pages.LogInPage;
 
 
 public class LoginPageTests extends BaseTest {

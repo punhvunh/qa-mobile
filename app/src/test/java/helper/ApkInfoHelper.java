@@ -17,9 +17,19 @@ public class ApkInfoHelper {
         if (app == null || app.isEmpty()) { //если путь к apk файлу не указан, выкидываем ошибку
             throw new RuntimeException("No value for key 'app' providing apk path in emulator.properties");
         }
+        String os = System.getProperty("os.name").toLowerCase();
+        String pathToAapt;
+
+        if (os.contains("win")) {
+            pathToAapt = "C:\\Users\\fimok\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\";  // Укажите путь к aapt.exe на Windows
+        } else if (os.contains("mac")) {
+            pathToAapt = "/Users/" + System.getProperty("user.name") + "/Library/Android/sdk/build-tools/34.0.0/aapt";
+        } else {
+            throw new RuntimeException("Unsupported operating system");
+        }
         try {
             //вызываем bash команду aapt dumb banding путь к apk, чтобы прочитать AndroidManifest.xml из apk файла
-            apkInfo = executeSh("aapt dumb badging " + ConfigReader.emulatorConfig.app());
+            apkInfo = executeSh(pathToAapt + "aapt dumb badging " + ConfigReader.emulatorConfig.app());
         } catch (IOException | InterruptedException | ExecutionException e) {
             throw new RuntimeException(e);
         }

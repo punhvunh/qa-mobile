@@ -1,4 +1,4 @@
-package pages;
+package locators.pages;
 
 import static com.codeborne.selenide.Selenide.$;
 
