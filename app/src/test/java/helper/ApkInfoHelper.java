@@ -19,9 +19,12 @@ public class ApkInfoHelper {
         }
         String os = System.getProperty("os.name").toLowerCase();
         String pathToAapt;
-
         if (os.contains("win")) {
-            pathToAapt = "C:\\Users\\fimok\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\";  // Укажите путь к aapt.exe на Windows
+            String androidSdkHome = System.getenv("ANDROID_HOME");
+            if (androidSdkHome == null) {
+                throw new RuntimeException("ANDROID_HOME environment variable is not set");
+            }
+            pathToAapt = androidSdkHome + "\\build-tools\\34.0.0\\";
         } else if (os.contains("mac")) {
             pathToAapt = "/Users/" + System.getProperty("user.name") + "/Library/Android/sdk/build-tools/34.0.0/";
         } else {
