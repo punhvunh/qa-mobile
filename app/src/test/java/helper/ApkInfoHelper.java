@@ -23,7 +23,7 @@ public class ApkInfoHelper {
         if (os.contains("win")) {
             pathToAapt = "C:\\Users\\fimok\\AppData\\Local\\Android\\Sdk\\build-tools\\34.0.0\\";  // Укажите путь к aapt.exe на Windows
         } else if (os.contains("mac")) {
-            pathToAapt = "/Users/" + System.getProperty("user.name") + "/Library/Android/sdk/build-tools/34.0.0/aapt";
+            pathToAapt = "/Users/" + System.getProperty("user.name") + "/Library/Android/sdk/build-tools/34.0.0/";
         } else {
             throw new RuntimeException("Unsupported operating system");
         }
