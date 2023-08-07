@@ -1,1 +1,56 @@
-{"uid":"4b4757e66a1912dae1a509f688f20b0f","name":"categories","children":[{"name":"Test defects","children":[{"name":"Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found","children":[{"name":"testLoginPageScreenshotFail()","uid":"255bf260c78118e9","parentUid":"3ea103dd0ea6ae8f83aaefa2df67ae54","status":"broken","time":{"start":1691007473359,"stop":1691007480921,"duration":7562},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testLoginPageScreenshot()","uid":"27122fc6bd6b5d79","parentUid":"3ea103dd0ea6ae8f83aaefa2df67ae54","status":"broken","time":{"start":1691007480929,"stop":1691007489602,"duration":8673},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]}],"uid":"3ea103dd0ea6ae8f83aaefa2df67ae54"}],"uid":"bdbf199525818fae7a8651db9eafe741"}]}
+{
+  "uid": "4b4757e66a1912dae1a509f688f20b0f",
+  "name": "categories",
+  "children": [
+    {
+      "name": "Test defects",
+      "children": [
+        {
+          "name": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
+          "children": [
+            {
+              "name": "testLoginPageScreenshotFail()",
+              "uid": "cb5f6ad11b52696",
+              "parentUid": "3ea103dd0ea6ae8f83aaefa2df67ae54",
+              "status": "broken",
+              "time": {
+                "start": 1691409346349,
+                "stop": 1691409354595,
+                "duration": 8246
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testLoginPageScreenshot()",
+              "uid": "bc206750c944a57",
+              "parentUid": "3ea103dd0ea6ae8f83aaefa2df67ae54",
+              "status": "broken",
+              "time": {
+                "start": 1691409359676,
+                "stop": 1691409367563,
+                "duration": 7887
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            }
+          ],
+          "uid": "3ea103dd0ea6ae8f83aaefa2df67ae54"
+        }
+      ],
+      "uid": "bdbf199525818fae7a8651db9eafe741"
+    }
+  ]
+}

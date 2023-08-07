@@ -1,0 +1,376 @@
+{
+  "uid": "5b68dd713e4cdcdb",
+  "name": "testEntersMaxCharacterLimitInLoginField()",
+  "fullName": "tests.LoginPageTests.testEntersMaxCharacterLimitInLoginField",
+  "historyId": "e081be13472e05f486b602e103665524",
+  "time": {
+    "start": 1691409164565,
+    "stop": 1691409173219,
+    "duration": 8654
+  },
+  "description": "Ввод максимально допустимого количества символов в поле Логин",
+  "descriptionHtml": "<p>Ввод максимально допустимого количества символов в поле Логин</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "setup",
+      "time": {
+        "start": 1691409049765,
+        "stop": 1691409049971,
+        "duration": 206
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "init",
+      "time": {
+        "start": 1691409049975,
+        "stop": 1691409049975,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "startDriver",
+      "time": {
+        "start": 1691409164570,
+        "stop": 1691409169832,
+        "duration": 5262
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Открыть приложение",
+          "time": {
+            "start": 1691409164570,
+            "stop": 1691409169832,
+            "duration": 5262
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"open\") ",
+              "time": {
+                "start": 1691409164570,
+                "stop": 1691409169832,
+                "duration": 5262
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "testStage": {
+    "description": "Ввод максимально допустимого количества символов в поле Логин",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Проверяем количество символов",
+        "time": {
+          "start": 1691409169833,
+          "stop": 1691409169834,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "maxCharacters",
+            "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Заполняем поле Логин",
+        "time": {
+          "start": 1691409169834,
+          "stop": 1691409172062,
+          "duration": 2228
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
+            "time": {
+              "start": 1691409169835,
+              "stop": 1691409171408,
+              "duration": 1573
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") send keys(abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX)",
+            "time": {
+              "start": 1691409171409,
+              "stop": 1691409172062,
+              "duration": 653
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Логин"
+          },
+          {
+            "name": "value",
+            "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Проверяем что поле заполнено",
+        "time": {
+          "start": 1691409172889,
+          "stop": 1691409172920,
+          "duration": 31
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get text()",
+            "time": {
+              "start": 1691409172889,
+              "stop": 1691409172920,
+              "duration": 31
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "expectedText",
+            "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX"
+          },
+          {
+            "name": "fieldElement",
+            "value": "<null class=\"android.widget.EditText\" name=\"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX\">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX</null>"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 1,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Не видим ошибку после авторизации с правильным данными под полем",
+        "time": {
+          "start": 1691409172921,
+          "stop": 1691409172929,
+          "duration": 8
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: \") should be(hidden)",
+            "time": {
+              "start": 1691409172921,
+              "stop": 1691409172929,
+              "duration": 8
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "stepsCount": 1,
+        "attachmentsCount": 0,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "stepsCount": 8,
+    "attachmentsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [
+    {
+      "name": "afterEach",
+      "time": {
+        "start": 1691409172929,
+        "stop": 1691409173219,
+        "duration": 290
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Закрыть приложение",
+          "time": {
+            "start": 1691409172929,
+            "stop": 1691409173219,
+            "duration": 290
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"webdriver\") close()",
+              "time": {
+                "start": 1691409172929,
+                "stop": 1691409173219,
+                "duration": 290
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "junit.platform.uniqueid",
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testEntersMaxCharacterLimitInLoginField()]"
+    },
+    {
+      "name": "host",
+      "value": "o27012099.local"
+    },
+    {
+      "name": "thread",
+      "value": "2173@o27012099.local.Test worker(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testClass",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testEntersMaxCharacterLimitInLoginField"
+    },
+    {
+      "name": "suite",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "5b68dd713e4cdcdb.json",
+  "parameterValues": []
+}

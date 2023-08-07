@@ -1,1 +1,200 @@
-[{"uid":"e254e278e41adc50","name":"testTriesToLogInWithTheWrongLogin()","time":{"start":1691007454496,"stop":1691007466306,"duration":11810},"status":"passed","severity":"normal"},{"uid":"4f0ccc461b0a539","name":"testChecksTheHeaderNameAfterLogIn(String, String) [1] Login, Password","time":{"start":1691007419628,"stop":1691007445454,"duration":25826},"status":"passed","severity":"normal"},{"uid":"2453b20462f678fc","name":"testEntersValidCharactersInLoginField()","time":{"start":1691007445462,"stop":1691007454490,"duration":9028},"status":"passed","severity":"normal"},{"uid":"255bf260c78118e9","name":"testLoginPageScreenshotFail()","time":{"start":1691007473359,"stop":1691007480921,"duration":7562},"status":"broken","severity":"normal"},{"uid":"ea51395b526cfbe9","name":"testChecksButtonName()","time":{"start":1691007466317,"stop":1691007473345,"duration":7028},"status":"passed","severity":"normal"},{"uid":"decb24f0af2606fc","name":"testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField()","time":{"start":1691007261382,"stop":1691007282697,"duration":21315},"status":"passed","severity":"normal"},{"uid":"8693ce0e81a8c6ea","name":"testEntersInvalidCharactersInLoginField()","time":{"start":1691007373965,"stop":1691007393447,"duration":19482},"status":"passed","severity":"normal"},{"uid":"962efaf2a6b0426","name":"testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()","time":{"start":1691007334728,"stop":1691007343564,"duration":8836},"status":"passed","severity":"normal"},{"uid":"15d3dd68181a4fc5","name":"testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password","time":{"start":1691007303509,"stop":1691007327400,"duration":23891},"status":"passed","severity":"normal"},{"uid":"fde7812aafd83fdb","name":"testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField()","time":{"start":1691007282908,"stop":1691007303365,"duration":20457},"status":"passed","severity":"normal"},{"uid":"b023467325095267","name":"testChecksThatFieldAreEmptyAfterClickingOnThem()","time":{"start":1691007393454,"stop":1691007403927,"duration":10473},"status":"passed","severity":"normal"},{"uid":"27122fc6bd6b5d79","name":"testLoginPageScreenshot()","time":{"start":1691007480929,"stop":1691007489602,"duration":8673},"status":"broken","severity":"normal"},{"uid":"a5dbc1c7d6e3ce72","name":"testTriesToLogInWithTheWrongPassword()","time":{"start":1691007352421,"stop":1691007364205,"duration":11784},"status":"passed","severity":"normal"},{"uid":"4f9c2d6ca6326508","name":"testChecksFieldLabels()","time":{"start":1691007327413,"stop":1691007334723,"duration":7310},"status":"passed","severity":"normal"},{"uid":"30cc2323b48bc82b","name":"testEntersMaxCharacterLimitInLoginField()","time":{"start":1691007343572,"stop":1691007352415,"duration":8843},"status":"passed","severity":"normal"},{"uid":"8c3a98c4c0f8483b","name":"testEntersMaxCharacterLimitInPasswordField()","time":{"start":1691007403933,"stop":1691007411956,"duration":8023},"status":"passed","severity":"normal"},{"uid":"ca7dcee434237ab6","name":"testChecksTheHeaderName()","time":{"start":1691007411962,"stop":1691007419621,"duration":7659},"status":"passed","severity":"normal"},{"uid":"208dc71facd25024","name":"testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()","time":{"start":1691007364211,"stop":1691007373957,"duration":9746},"status":"passed","severity":"normal"}]
+[
+  {
+    "uid": "14851841581ae4a3",
+    "name": "testEntersInvalidCharactersInLoginField()",
+    "time": {
+      "start": 1691409209538,
+      "stop": 1691409228617,
+      "duration": 19079
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "823e661575ca8b7d",
+    "name": "testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password",
+    "time": {
+      "start": 1691409110907,
+      "stop": 1691409134393,
+      "duration": 23486
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "344cff2a8c7c3b03",
+    "name": "testChecksTheHeaderNameAfterLogIn(String, String) [1] Login, Password",
+    "time": {
+      "start": 1691409274035,
+      "stop": 1691409299215,
+      "duration": 25180
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "54a8ef396718e4e2",
+    "name": "testChecksFieldLabels()",
+    "time": {
+      "start": 1691409139416,
+      "stop": 1691409146750,
+      "duration": 7334
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "26042f4ca1dcc7a7",
+    "name": "testChecksThatFieldAreEmptyAfterClickingOnThem()",
+    "time": {
+      "start": 1691409233628,
+      "stop": 1691409242716,
+      "duration": 9088
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "53505aeda7a9dd47",
+    "name": "testTriesToLogInWithTheWrongLogin()",
+    "time": {
+      "start": 1691409318131,
+      "stop": 1691409329420,
+      "duration": 11289
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "dcb5140890bdad6",
+    "name": "testEntersValidCharactersInLoginField()",
+    "time": {
+      "start": 1691409304233,
+      "stop": 1691409313121,
+      "duration": 8888
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "1e5329f7bceaa4e5",
+    "name": "testChecksTheHeaderName()",
+    "time": {
+      "start": 1691409261569,
+      "stop": 1691409269017,
+      "duration": 7448
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "686308ede76d2f37",
+    "name": "testTriesToLogInWithTheWrongPassword()",
+    "time": {
+      "start": 1691409178231,
+      "stop": 1691409190491,
+      "duration": 12260
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "5b68dd713e4cdcdb",
+    "name": "testEntersMaxCharacterLimitInLoginField()",
+    "time": {
+      "start": 1691409164565,
+      "stop": 1691409173219,
+      "duration": 8654
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "65c613c5dfc4593d",
+    "name": "testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()",
+    "time": {
+      "start": 1691409151761,
+      "stop": 1691409159549,
+      "duration": 7788
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "cb5f6ad11b52696",
+    "name": "testLoginPageScreenshotFail()",
+    "time": {
+      "start": 1691409346349,
+      "stop": 1691409354595,
+      "duration": 8246
+    },
+    "status": "broken",
+    "severity": "normal"
+  },
+  {
+    "uid": "87df4fbb1b75a916",
+    "name": "testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField()",
+    "time": {
+      "start": 1691409055355,
+      "stop": 1691409081575,
+      "duration": 26220
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "bc206750c944a57",
+    "name": "testLoginPageScreenshot()",
+    "time": {
+      "start": 1691409359676,
+      "stop": 1691409367563,
+      "duration": 7887
+    },
+    "status": "broken",
+    "severity": "normal"
+  },
+  {
+    "uid": "cdb78f1fa2c0e205",
+    "name": "testEntersMaxCharacterLimitInPasswordField()",
+    "time": {
+      "start": 1691409247729,
+      "stop": 1691409256556,
+      "duration": 8827
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "4afac405e059d7ff",
+    "name": "testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()",
+    "time": {
+      "start": 1691409195508,
+      "stop": 1691409204523,
+      "duration": 9015
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "86b1ca0be487e366",
+    "name": "testChecksButtonName()",
+    "time": {
+      "start": 1691409334433,
+      "stop": 1691409341326,
+      "duration": 6893
+    },
+    "status": "passed",
+    "severity": "normal"
+  },
+  {
+    "uid": "5bab6ee09e668e17",
+    "name": "testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField()",
+    "time": {
+      "start": 1691409086804,
+      "stop": 1691409105796,
+      "duration": 18992
+    },
+    "status": "passed",
+    "severity": "normal"
+  }
+]

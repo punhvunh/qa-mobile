@@ -1,0 +1,338 @@
+{
+  "uid": "54a8ef396718e4e2",
+  "name": "testChecksFieldLabels()",
+  "fullName": "tests.LoginPageTests.testChecksFieldLabels",
+  "historyId": "ee7992dece921fdbe51504e2105cb231",
+  "time": {
+    "start": 1691409139416,
+    "stop": 1691409146750,
+    "duration": 7334
+  },
+  "description": "Проверяем лэйблы полей",
+  "descriptionHtml": "<p>Проверяем лэйблы полей</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "setup",
+      "time": {
+        "start": 1691409049765,
+        "stop": 1691409049971,
+        "duration": 206
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "init",
+      "time": {
+        "start": 1691409049975,
+        "stop": 1691409049975,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "startDriver",
+      "time": {
+        "start": 1691409139422,
+        "stop": 1691409144796,
+        "duration": 5374
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Открыть приложение",
+          "time": {
+            "start": 1691409139422,
+            "stop": 1691409144796,
+            "duration": 5374
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"open\") ",
+              "time": {
+                "start": 1691409139423,
+                "stop": 1691409144796,
+                "duration": 5373
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "testStage": {
+    "description": "Проверяем лэйблы полей",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Проверяем лэйблы полей Логин",
+        "time": {
+          "start": 1691409144797,
+          "stop": 1691409146436,
+          "duration": 1639
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
+            "time": {
+              "start": 1691409144798,
+              "stop": 1691409146384,
+              "duration": 1586
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get text()",
+            "time": {
+              "start": 1691409146384,
+              "stop": 1691409146436,
+              "duration": 52
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Логин"
+          },
+          {
+            "name": "value",
+            "value": "Логин"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Проверяем лэйблы полей Пароль",
+        "time": {
+          "start": 1691409146436,
+          "stop": 1691409146487,
+          "duration": 51
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "time": {
+              "start": 1691409146436,
+              "stop": 1691409146457,
+              "duration": 21
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get text()",
+            "time": {
+              "start": 1691409146457,
+              "stop": 1691409146487,
+              "duration": 30
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Пароль"
+          },
+          {
+            "name": "value",
+            "value": "Пароль"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "stepsCount": 6,
+    "attachmentsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [
+    {
+      "name": "afterEach",
+      "time": {
+        "start": 1691409146487,
+        "stop": 1691409146749,
+        "duration": 262
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Закрыть приложение",
+          "time": {
+            "start": 1691409146487,
+            "stop": 1691409146749,
+            "duration": 262
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"webdriver\") close()",
+              "time": {
+                "start": 1691409146487,
+                "stop": 1691409146749,
+                "duration": 262
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "junit.platform.uniqueid",
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testChecksFieldLabels()]"
+    },
+    {
+      "name": "host",
+      "value": "o27012099.local"
+    },
+    {
+      "name": "thread",
+      "value": "2173@o27012099.local.Test worker(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testClass",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testChecksFieldLabels"
+    },
+    {
+      "name": "suite",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "54a8ef396718e4e2.json",
+  "parameterValues": []
+}

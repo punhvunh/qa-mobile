@@ -1,1 +1,366 @@
-{"uid":"ab17fc5a4eb3bca4b216b548c7f9fcbc","name":"timeline","children":[{"name":"DESKTOP-RI5OITM","children":[{"name":"8248@DESKTOP-RI5OITM.Test worker(1)","children":[{"name":"testChecksTheHeaderNameAfterLogIn(String, String) [1] Login, Password","uid":"4f0ccc461b0a539","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007419628,"stop":1691007445454,"duration":25826},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["Login","Password"],"tags":[]},{"name":"testEntersMaxCharacterLimitInPasswordField()","uid":"8c3a98c4c0f8483b","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007403933,"stop":1691007411956,"duration":8023},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField()","uid":"fde7812aafd83fdb","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007282908,"stop":1691007303365,"duration":20457},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testChecksButtonName()","uid":"ea51395b526cfbe9","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007466317,"stop":1691007473345,"duration":7028},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()","uid":"208dc71facd25024","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007364211,"stop":1691007373957,"duration":9746},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testEntersInvalidCharactersInLoginField()","uid":"8693ce0e81a8c6ea","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007373965,"stop":1691007393447,"duration":19482},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testChecksFieldLabels()","uid":"4f9c2d6ca6326508","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007327413,"stop":1691007334723,"duration":7310},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testChecksTheHeaderName()","uid":"ca7dcee434237ab6","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007411962,"stop":1691007419621,"duration":7659},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testEntersValidCharactersInLoginField()","uid":"2453b20462f678fc","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007445462,"stop":1691007454490,"duration":9028},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField()","uid":"decb24f0af2606fc","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007261382,"stop":1691007282697,"duration":21315},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testChecksThatFieldAreEmptyAfterClickingOnThem()","uid":"b023467325095267","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007393454,"stop":1691007403927,"duration":10473},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testEntersMaxCharacterLimitInLoginField()","uid":"30cc2323b48bc82b","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007343572,"stop":1691007352415,"duration":8843},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testLoginPageScreenshot()","uid":"27122fc6bd6b5d79","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"broken","time":{"start":1691007480929,"stop":1691007489602,"duration":8673},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testTriesToLogInWithTheWrongPassword()","uid":"a5dbc1c7d6e3ce72","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007352421,"stop":1691007364205,"duration":11784},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()","uid":"962efaf2a6b0426","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007334728,"stop":1691007343564,"duration":8836},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password","uid":"15d3dd68181a4fc5","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007303509,"stop":1691007327400,"duration":23891},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":["Login","Password"],"tags":[]},{"name":"testLoginPageScreenshotFail()","uid":"255bf260c78118e9","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"broken","time":{"start":1691007473359,"stop":1691007480921,"duration":7562},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]},{"name":"testTriesToLogInWithTheWrongLogin()","uid":"e254e278e41adc50","parentUid":"297f8e8b97695d3f02c6c08de6051b66","status":"passed","time":{"start":1691007454496,"stop":1691007466306,"duration":11810},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]}],"uid":"297f8e8b97695d3f02c6c08de6051b66"}],"uid":"a5aa974498176c4836f94fa27e1d7a77"}]}
+{
+  "uid": "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name": "timeline",
+  "children": [
+    {
+      "name": "o27012099.local",
+      "children": [
+        {
+          "name": "2173@o27012099.local.Test worker(1)",
+          "children": [
+            {
+              "name": "testChecksTheHeaderName()",
+              "uid": "1e5329f7bceaa4e5",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409261569,
+                "stop": 1691409269017,
+                "duration": 7448
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testChecksFieldLabels()",
+              "uid": "54a8ef396718e4e2",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409139416,
+                "stop": 1691409146750,
+                "duration": 7334
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testEntersValidCharactersInLoginField()",
+              "uid": "dcb5140890bdad6",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409304233,
+                "stop": 1691409313121,
+                "duration": 8888
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()",
+              "uid": "4afac405e059d7ff",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409195508,
+                "stop": 1691409204523,
+                "duration": 9015
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testChecksThatFieldAreEmptyAfterClickingOnThem()",
+              "uid": "26042f4ca1dcc7a7",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409233628,
+                "stop": 1691409242716,
+                "duration": 9088
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testTriesToLogInWithTheWrongPassword()",
+              "uid": "686308ede76d2f37",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409178231,
+                "stop": 1691409190491,
+                "duration": 12260
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password",
+              "uid": "823e661575ca8b7d",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409110907,
+                "stop": 1691409134393,
+                "duration": 23486
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "Login",
+                "Password"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField()",
+              "uid": "5bab6ee09e668e17",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409086804,
+                "stop": 1691409105796,
+                "duration": 18992
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testEntersMaxCharacterLimitInLoginField()",
+              "uid": "5b68dd713e4cdcdb",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409164565,
+                "stop": 1691409173219,
+                "duration": 8654
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testLoginPageScreenshot()",
+              "uid": "bc206750c944a57",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "broken",
+              "time": {
+                "start": 1691409359676,
+                "stop": 1691409367563,
+                "duration": 7887
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()",
+              "uid": "65c613c5dfc4593d",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409151761,
+                "stop": 1691409159549,
+                "duration": 7788
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testLoginPageScreenshotFail()",
+              "uid": "cb5f6ad11b52696",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "broken",
+              "time": {
+                "start": 1691409346349,
+                "stop": 1691409354595,
+                "duration": 8246
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testEntersInvalidCharactersInLoginField()",
+              "uid": "14851841581ae4a3",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409209538,
+                "stop": 1691409228617,
+                "duration": 19079
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testChecksButtonName()",
+              "uid": "86b1ca0be487e366",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409334433,
+                "stop": 1691409341326,
+                "duration": 6893
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testEntersMaxCharacterLimitInPasswordField()",
+              "uid": "cdb78f1fa2c0e205",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409247729,
+                "stop": 1691409256556,
+                "duration": 8827
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testChecksTheHeaderNameAfterLogIn(String, String) [1] Login, Password",
+              "uid": "344cff2a8c7c3b03",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409274035,
+                "stop": 1691409299215,
+                "duration": 25180
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "Login",
+                "Password"
+              ],
+              "tags": []
+            },
+            {
+              "name": "testTriesToLogInWithTheWrongLogin()",
+              "uid": "53505aeda7a9dd47",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409318131,
+                "stop": 1691409329420,
+                "duration": 11289
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            },
+            {
+              "name": "testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField()",
+              "uid": "87df4fbb1b75a916",
+              "parentUid": "fd21df5cfa578ef0405d62e1f7aae387",
+              "status": "passed",
+              "time": {
+                "start": 1691409055355,
+                "stop": 1691409081575,
+                "duration": 26220
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [],
+              "tags": []
+            }
+          ],
+          "uid": "fd21df5cfa578ef0405d62e1f7aae387"
+        }
+      ],
+      "uid": "c0e883816809e4fca7188475498c0347"
+    }
+  ]
+}

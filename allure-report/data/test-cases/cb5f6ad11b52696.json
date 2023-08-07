@@ -1,0 +1,247 @@
+{
+  "uid": "cb5f6ad11b52696",
+  "name": "testLoginPageScreenshotFail()",
+  "fullName": "tests.ScreenshotTests.testLoginPageScreenshotFail",
+  "historyId": "db852d0e2d4286e20048adc239fb5914",
+  "time": {
+    "start": 1691409346349,
+    "stop": 1691409354595,
+    "duration": 8246
+  },
+  "description": "",
+  "status": "broken",
+  "statusMessage": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
+  "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshotFail(ScreenshotTests.java:47)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "setup",
+      "time": {
+        "start": 1691409341340,
+        "stop": 1691409341340,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "startDriver",
+      "time": {
+        "start": 1691409346352,
+        "stop": 1691409351808,
+        "duration": 5456
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Открыть приложение",
+          "time": {
+            "start": 1691409346353,
+            "stop": 1691409351807,
+            "duration": 5454
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"open\") ",
+              "time": {
+                "start": 1691409346355,
+                "stop": 1691409351807,
+                "duration": 5452
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    },
+    {
+      "name": "init",
+      "time": {
+        "start": 1691409351810,
+        "stop": 1691409351810,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    }
+  ],
+  "testStage": {
+    "description": "",
+    "status": "broken",
+    "statusMessage": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
+    "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshotFail(ScreenshotTests.java:47)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n",
+    "steps": [
+      {
+        "name": "$(\"By.xpath: //hierarchy//android.widget.FrameLayout//android.view.ViewGroup\") screenshot()",
+        "time": {
+          "start": 1691409351811,
+          "stop": 1691409354024,
+          "duration": 2213
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "hasContent": false
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": true,
+    "stepsCount": 1,
+    "attachmentsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [
+    {
+      "name": "afterEach",
+      "time": {
+        "start": 1691409354181,
+        "stop": 1691409354575,
+        "duration": 394
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Закрыть приложение",
+          "time": {
+            "start": 1691409354184,
+            "stop": 1691409354575,
+            "duration": 391
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"webdriver\") close()",
+              "time": {
+                "start": 1691409354185,
+                "stop": 1691409354575,
+                "duration": 390
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "junit.platform.uniqueid",
+      "value": "[engine:junit-jupiter]/[class:tests.ScreenshotTests]/[method:testLoginPageScreenshotFail()]"
+    },
+    {
+      "name": "host",
+      "value": "o27012099.local"
+    },
+    {
+      "name": "thread",
+      "value": "2173@o27012099.local.Test worker(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "tests.ScreenshotTests"
+    },
+    {
+      "name": "testClass",
+      "value": "tests.ScreenshotTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testLoginPageScreenshotFail"
+    },
+    {
+      "name": "suite",
+      "value": "tests.ScreenshotTests"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [
+      {
+        "name": "Test defects",
+        "matchedStatuses": [],
+        "flaky": false
+      }
+    ],
+    "tags": []
+  },
+  "source": "cb5f6ad11b52696.json",
+  "parameterValues": []
+}
