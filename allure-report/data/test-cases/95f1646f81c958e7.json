@@ -1,5 +1,5 @@
 {
-  "uid": "14851841581ae4a3",
+  "uid": "95f1646f81c958e7",
   "name": "testEntersInvalidCharactersInLoginField()",
   "fullName": "tests.LoginPageTests.testEntersInvalidCharactersInLoginField",
   "historyId": "3c25c93e38610610bdac2b695165d34",
@@ -227,16 +227,16 @@
             "steps": [],
             "attachments": [
               {
-                "uid": "84728b5b1f91cf3d",
+                "uid": "e6672d6592f529b2",
                 "name": "Screenshot",
-                "source": "84728b5b1f91cf3d.png",
+                "source": "e6672d6592f529b2.png",
                 "type": "image/png",
                 "size": 70944
               },
               {
-                "uid": "d672ee18808de220",
+                "uid": "55bdda79de5dcc72",
                 "name": "Page source",
-                "source": "d672ee18808de220.html",
+                "source": "55bdda79de5dcc72.html",
                 "type": "text/html",
                 "size": 9264
               }
@@ -364,14 +364,12 @@
   ],
   "parameters": [],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "14851841581ae4a3.json",
+  "source": "95f1646f81c958e7.json",
   "parameterValues": []
 }

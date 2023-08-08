@@ -1,29 +1,29 @@
 {
-  "uid": "4afac405e059d7ff",
-  "name": "testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()",
-  "fullName": "tests.LoginPageTests.testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton",
-  "historyId": "7155d7f3e0c1b03b2fa41266f8f886e3",
+  "uid": "718cae0b1fab2b9c",
+  "name": "testChecksFieldLabels()",
+  "fullName": "tests.LoginPageTests.testChecksFieldLabels",
+  "historyId": "ee7992dece921fdbe51504e2105cb231",
   "time": {
-    "start": 1691409195508,
-    "stop": 1691409204523,
-    "duration": 9015
+    "start": 1691474707656,
+    "stop": 1691474715053,
+    "duration": 7397
   },
-  "description": "Проверяем не видимость пароля после повторного нажатия на кнопку Показать пароль",
-  "descriptionHtml": "<p>Проверяем не видимость пароля после повторного нажатия на кнопку Показать пароль</p>\n",
+  "description": "Проверяем лэйблы полей",
+  "descriptionHtml": "<p>Проверяем лэйблы полей</p>\n",
   "status": "passed",
   "flaky": false,
   "newFailed": false,
   "newBroken": false,
   "newPassed": false,
-  "retriesCount": 0,
+  "retriesCount": 1,
   "retriesStatusChange": false,
   "beforeStages": [
     {
       "name": "setup",
       "time": {
-        "start": 1691409049765,
-        "stop": 1691409049971,
-        "duration": 206
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
       },
       "status": "passed",
       "steps": [],
@@ -37,8 +37,8 @@
     {
       "name": "init",
       "time": {
-        "start": 1691409049975,
-        "stop": 1691409049975,
+        "start": 1691474624264,
+        "stop": 1691474624264,
         "duration": 0
       },
       "status": "passed",
@@ -53,27 +53,27 @@
     {
       "name": "startDriver",
       "time": {
-        "start": 1691409195514,
-        "stop": 1691409200823,
-        "duration": 5309
+        "start": 1691474707659,
+        "stop": 1691474713620,
+        "duration": 5961
       },
       "status": "passed",
       "steps": [
         {
           "name": "Открыть приложение",
           "time": {
-            "start": 1691409195514,
-            "stop": 1691409200823,
-            "duration": 5309
+            "start": 1691474707660,
+            "stop": 1691474713620,
+            "duration": 5960
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"open\") ",
               "time": {
-                "start": 1691409195514,
-                "stop": 1691409200823,
-                "duration": 5309
+                "start": 1691474707661,
+                "stop": 1691474713620,
+                "duration": 5959
               },
               "status": "passed",
               "steps": [],
@@ -102,24 +102,24 @@
     }
   ],
   "testStage": {
-    "description": "Проверяем не видимость пароля после повторного нажатия на кнопку Показать пароль",
+    "description": "Проверяем лэйблы полей",
     "status": "passed",
     "steps": [
       {
-        "name": "Заполняем поле Пароль",
+        "name": "Проверяем лэйблы полей Логин",
         "time": {
-          "start": 1691409200825,
-          "stop": 1691409203083,
-          "duration": 2258
+          "start": 1691474713620,
+          "stop": 1691474714655,
+          "duration": 1035
         },
         "status": "passed",
         "steps": [
           {
-            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
             "time": {
-              "start": 1691409200825,
-              "stop": 1691409202418,
-              "duration": 1593
+              "start": 1691474713620,
+              "stop": 1691474714618,
+              "duration": 998
             },
             "status": "passed",
             "steps": [],
@@ -131,11 +131,69 @@
             "hasContent": false
           },
           {
-            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") send keys(Password)",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get text()",
             "time": {
-              "start": 1691409202418,
-              "stop": 1691409203083,
-              "duration": 665
+              "start": 1691474714618,
+              "stop": 1691474714655,
+              "duration": 37
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Логин"
+          },
+          {
+            "name": "value",
+            "value": "Логин"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Проверяем лэйблы полей Пароль",
+        "time": {
+          "start": 1691474714655,
+          "stop": 1691474714705,
+          "duration": 50
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "time": {
+              "start": 1691474714655,
+              "stop": 1691474714678,
+              "duration": 23
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get text()",
+            "time": {
+              "start": 1691474714678,
+              "stop": 1691474714705,
+              "duration": 27
             },
             "status": "passed",
             "steps": [],
@@ -155,107 +213,9 @@
           },
           {
             "name": "value",
-            "value": "Password"
+            "value": "Пароль"
           }
         ],
-        "shouldDisplayMessage": false,
-        "stepsCount": 2,
-        "attachmentsCount": 0,
-        "hasContent": true
-      },
-      {
-        "name": "Кликаем на кнопку Показать пароль",
-        "time": {
-          "start": 1691409203083,
-          "stop": 1691409203662,
-          "duration": 579
-        },
-        "status": "passed",
-        "steps": [
-          {
-            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") should be(visible)",
-            "time": {
-              "start": 1691409203083,
-              "stop": 1691409203601,
-              "duration": 518
-            },
-            "status": "passed",
-            "steps": [],
-            "attachments": [],
-            "parameters": [],
-            "shouldDisplayMessage": false,
-            "stepsCount": 0,
-            "attachmentsCount": 0,
-            "hasContent": false
-          },
-          {
-            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") click()",
-            "time": {
-              "start": 1691409203601,
-              "stop": 1691409203662,
-              "duration": 61
-            },
-            "status": "passed",
-            "steps": [],
-            "attachments": [],
-            "parameters": [],
-            "shouldDisplayMessage": false,
-            "stepsCount": 0,
-            "attachmentsCount": 0,
-            "hasContent": false
-          }
-        ],
-        "attachments": [],
-        "parameters": [],
-        "shouldDisplayMessage": false,
-        "stepsCount": 2,
-        "attachmentsCount": 0,
-        "hasContent": true
-      },
-      {
-        "name": "Кликаем на кнопку Показать пароль",
-        "time": {
-          "start": 1691409203663,
-          "stop": 1691409204231,
-          "duration": 568
-        },
-        "status": "passed",
-        "steps": [
-          {
-            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") should be(visible)",
-            "time": {
-              "start": 1691409203663,
-              "stop": 1691409204173,
-              "duration": 510
-            },
-            "status": "passed",
-            "steps": [],
-            "attachments": [],
-            "parameters": [],
-            "shouldDisplayMessage": false,
-            "stepsCount": 0,
-            "attachmentsCount": 0,
-            "hasContent": false
-          },
-          {
-            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") click()",
-            "time": {
-              "start": 1691409204173,
-              "stop": 1691409204231,
-              "duration": 58
-            },
-            "status": "passed",
-            "steps": [],
-            "attachments": [],
-            "parameters": [],
-            "shouldDisplayMessage": false,
-            "stepsCount": 0,
-            "attachmentsCount": 0,
-            "hasContent": false
-          }
-        ],
-        "attachments": [],
-        "parameters": [],
         "shouldDisplayMessage": false,
         "stepsCount": 2,
         "attachmentsCount": 0,
@@ -265,7 +225,7 @@
     "attachments": [],
     "parameters": [],
     "shouldDisplayMessage": false,
-    "stepsCount": 9,
+    "stepsCount": 6,
     "attachmentsCount": 0,
     "hasContent": true
   },
@@ -273,27 +233,27 @@
     {
       "name": "afterEach",
       "time": {
-        "start": 1691409204231,
-        "stop": 1691409204523,
-        "duration": 292
+        "start": 1691474714706,
+        "stop": 1691474715053,
+        "duration": 347
       },
       "status": "passed",
       "steps": [
         {
           "name": "Закрыть приложение",
           "time": {
-            "start": 1691409204231,
-            "stop": 1691409204523,
-            "duration": 292
+            "start": 1691474714706,
+            "stop": 1691474715053,
+            "duration": 347
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"webdriver\") close()",
               "time": {
-                "start": 1691409204231,
-                "stop": 1691409204523,
-                "duration": 292
+                "start": 1691474714706,
+                "stop": 1691474715053,
+                "duration": 347
               },
               "status": "passed",
               "steps": [],
@@ -324,7 +284,7 @@
   "labels": [
     {
       "name": "junit.platform.uniqueid",
-      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton()]"
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testChecksFieldLabels()]"
     },
     {
       "name": "host",
@@ -332,7 +292,7 @@
     },
     {
       "name": "thread",
-      "value": "2173@o27012099.local.Test worker(1)"
+      "value": "1987@o27012099.local.Test worker(1)"
     },
     {
       "name": "framework",
@@ -352,7 +312,7 @@
     },
     {
       "name": "testMethod",
-      "value": "testCheckTheInvisibilityOfThePasswordAfterRepeatClickingTheShowPasswordButton"
+      "value": "testChecksFieldLabels"
     },
     {
       "name": "suite",
@@ -369,10 +329,20 @@
   "retry": false,
   "extra": {
     "severity": "normal",
-    "retries": [],
+    "retries": [
+      {
+        "uid": "c1c13a7464cfcf68",
+        "status": "passed",
+        "time": {
+          "start": 1691409139416,
+          "stop": 1691409146750,
+          "duration": 7334
+        }
+      }
+    ],
     "categories": [],
     "tags": []
   },
-  "source": "4afac405e059d7ff.json",
+  "source": "718cae0b1fab2b9c.json",
   "parameterValues": []
 }

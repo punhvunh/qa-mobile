@@ -1,5 +1,5 @@
 {
-  "uid": "5bab6ee09e668e17",
+  "uid": "977f126002cf191f",
   "name": "testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField()",
   "fullName": "tests.LoginPageTests.testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField",
   "historyId": "65438a8366039317fe9b0eef3d8c7d94",
@@ -227,16 +227,16 @@
             "steps": [],
             "attachments": [
               {
-                "uid": "34cc76086585d738",
+                "uid": "d8ddfe7ad683c23c",
                 "name": "Screenshot",
-                "source": "34cc76086585d738.png",
+                "source": "d8ddfe7ad683c23c.png",
                 "type": "image/png",
                 "size": 59151
               },
               {
-                "uid": "834455e8aaa35a95",
+                "uid": "a6612dd25b2b0145",
                 "name": "Page source",
-                "source": "834455e8aaa35a95.html",
+                "source": "a6612dd25b2b0145.html",
                 "type": "text/html",
                 "size": 9295
               }
@@ -364,14 +364,12 @@
   ],
   "parameters": [],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "5bab6ee09e668e17.json",
+  "source": "977f126002cf191f.json",
   "parameterValues": []
 }

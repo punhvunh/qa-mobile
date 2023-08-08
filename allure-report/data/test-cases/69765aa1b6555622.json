@@ -1,30 +1,30 @@
 {
-  "uid": "bc206750c944a57",
+  "uid": "69765aa1b6555622",
   "name": "testLoginPageScreenshot()",
   "fullName": "tests.ScreenshotTests.testLoginPageScreenshot",
   "historyId": "3e0cc96616af8b9e1b0237fcc9b74ce7",
   "time": {
-    "start": 1691409359676,
-    "stop": 1691409367563,
-    "duration": 7887
+    "start": 1691474616881,
+    "stop": 1691474624259,
+    "duration": 7378
   },
   "description": "",
   "status": "broken",
   "statusMessage": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
-  "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshot(ScreenshotTests.java:35)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n",
+  "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshot(ScreenshotTests.java:35)\n\tat java.base/java.lang.reflect.Method.invoke(Unknown Source)\n\tat java.base/java.util.ArrayList.forEach(Unknown Source)\n\tat java.base/java.util.ArrayList.forEach(Unknown Source)\n",
   "flaky": false,
   "newFailed": false,
   "newBroken": false,
   "newPassed": false,
-  "retriesCount": 0,
+  "retriesCount": 1,
   "retriesStatusChange": false,
   "beforeStages": [
     {
       "name": "setup",
       "time": {
-        "start": 1691409341340,
-        "stop": 1691409341340,
-        "duration": 0
+        "start": 1691474593128,
+        "stop": 1691474593170,
+        "duration": 42
       },
       "status": "passed",
       "steps": [],
@@ -38,27 +38,27 @@
     {
       "name": "startDriver",
       "time": {
-        "start": 1691409359687,
-        "stop": 1691409365205,
-        "duration": 5518
+        "start": 1691474616883,
+        "stop": 1691474622425,
+        "duration": 5542
       },
       "status": "passed",
       "steps": [
         {
           "name": "Открыть приложение",
           "time": {
-            "start": 1691409359687,
-            "stop": 1691409365205,
-            "duration": 5518
+            "start": 1691474616883,
+            "stop": 1691474622425,
+            "duration": 5542
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"open\") ",
               "time": {
-                "start": 1691409359688,
-                "stop": 1691409365205,
-                "duration": 5517
+                "start": 1691474616883,
+                "stop": 1691474622425,
+                "duration": 5542
               },
               "status": "passed",
               "steps": [],
@@ -88,8 +88,8 @@
     {
       "name": "init",
       "time": {
-        "start": 1691409365206,
-        "stop": 1691409365206,
+        "start": 1691474622426,
+        "stop": 1691474622426,
         "duration": 0
       },
       "status": "passed",
@@ -106,23 +106,23 @@
     "description": "",
     "status": "broken",
     "statusMessage": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
-    "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshot(ScreenshotTests.java:35)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:578)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n",
+    "statusTrace": "com.github.romankh3.image.comparison.exception.ImageNotFoundException: Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found\n\tat com.github.romankh3.image.comparison.ImageComparisonUtil.readImageFromResources(ImageComparisonUtil.java:61)\n\tat tests.BaseTest.assertScreenshot(BaseTest.java:69)\n\tat tests.ScreenshotTests.testLoginPageScreenshot(ScreenshotTests.java:35)\n\tat java.base/java.lang.reflect.Method.invoke(Unknown Source)\n\tat java.base/java.util.ArrayList.forEach(Unknown Source)\n\tat java.base/java.util.ArrayList.forEach(Unknown Source)\n",
     "steps": [
       {
         "name": "Проверям название заголовка",
         "time": {
-          "start": 1691409365207,
-          "stop": 1691409366797,
-          "duration": 1590
+          "start": 1691474622441,
+          "stop": 1691474623451,
+          "duration": 1010
         },
         "status": "passed",
         "steps": [
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/tvTitle\") should be(visible)",
             "time": {
-              "start": 1691409365208,
-              "stop": 1691409366749,
-              "duration": 1541
+              "start": 1691474622444,
+              "stop": 1691474623382,
+              "duration": 938
             },
             "status": "passed",
             "steps": [],
@@ -136,9 +136,9 @@
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/tvTitle\") get text()",
             "time": {
-              "start": 1691409366750,
-              "stop": 1691409366797,
-              "duration": 47
+              "start": 1691474623382,
+              "stop": 1691474623449,
+              "duration": 67
             },
             "status": "passed",
             "steps": [],
@@ -165,9 +165,9 @@
       {
         "name": "$(\"By.xpath: //hierarchy//android.widget.FrameLayout//android.view.ViewGroup\") screenshot()",
         "time": {
-          "start": 1691409366798,
-          "stop": 1691409367269,
-          "duration": 471
+          "start": 1691474623452,
+          "stop": 1691474623984,
+          "duration": 532
         },
         "status": "passed",
         "steps": [],
@@ -190,27 +190,27 @@
     {
       "name": "afterEach",
       "time": {
-        "start": 1691409367271,
-        "stop": 1691409367561,
-        "duration": 290
+        "start": 1691474623985,
+        "stop": 1691474624259,
+        "duration": 274
       },
       "status": "passed",
       "steps": [
         {
           "name": "Закрыть приложение",
           "time": {
-            "start": 1691409367271,
-            "stop": 1691409367561,
-            "duration": 290
+            "start": 1691474623985,
+            "stop": 1691474624258,
+            "duration": 273
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"webdriver\") close()",
               "time": {
-                "start": 1691409367272,
-                "stop": 1691409367561,
-                "duration": 289
+                "start": 1691474623985,
+                "stop": 1691474624258,
+                "duration": 273
               },
               "status": "passed",
               "steps": [],
@@ -249,7 +249,7 @@
     },
     {
       "name": "thread",
-      "value": "2173@o27012099.local.Test worker(1)"
+      "value": "1987@o27012099.local.Test worker(1)"
     },
     {
       "name": "framework",
@@ -286,7 +286,18 @@
   "retry": false,
   "extra": {
     "severity": "normal",
-    "retries": [],
+    "retries": [
+      {
+        "uid": "d9b18fec9efd78c7",
+        "status": "broken",
+        "statusDetails": "Image with path = src/test/resources/expectedScreenshots/testLoginPageScreenshot.png not found",
+        "time": {
+          "start": 1691409359676,
+          "stop": 1691409367563,
+          "duration": 7887
+        }
+      }
+    ],
     "categories": [
       {
         "name": "Test defects",
@@ -296,6 +307,6 @@
     ],
     "tags": []
   },
-  "source": "bc206750c944a57.json",
+  "source": "69765aa1b6555622.json",
   "parameterValues": []
 }

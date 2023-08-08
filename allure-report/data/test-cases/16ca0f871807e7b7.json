@@ -1,5 +1,5 @@
 {
-  "uid": "86b1ca0be487e366",
+  "uid": "16ca0f871807e7b7",
   "name": "testChecksButtonName()",
   "fullName": "tests.LoginPageTests.testChecksButtonName",
   "historyId": "dade469245e3c06a09ecfbbbe30f7b7d",
@@ -263,14 +263,12 @@
   ],
   "parameters": [],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "86b1ca0be487e366.json",
+  "source": "16ca0f871807e7b7.json",
   "parameterValues": []
 }

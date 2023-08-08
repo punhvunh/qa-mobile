@@ -1,0 +1,339 @@
+{
+  "uid": "8ad39cfb131b99a7",
+  "name": "testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()",
+  "fullName": "tests.LoginPageTests.testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton",
+  "historyId": "86606e42085079ed5b197e81cc9ebe49",
+  "time": {
+    "start": 1691474720061,
+    "stop": 1691474728358,
+    "duration": 8297
+  },
+  "description": "Проверяем видимость пароля после нажатия на кнопку Показать пароль",
+  "descriptionHtml": "<p>Проверяем видимость пароля после нажатия на кнопку Показать пароль</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "setup",
+      "time": {
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "init",
+      "time": {
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "startDriver",
+      "time": {
+        "start": 1691474720064,
+        "stop": 1691474725785,
+        "duration": 5721
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Открыть приложение",
+          "time": {
+            "start": 1691474720064,
+            "stop": 1691474725785,
+            "duration": 5721
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"open\") ",
+              "time": {
+                "start": 1691474720064,
+                "stop": 1691474725785,
+                "duration": 5721
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "testStage": {
+    "description": "Проверяем видимость пароля после нажатия на кнопку Показать пароль",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Заполняем поле Пароль",
+        "time": {
+          "start": 1691474725786,
+          "stop": 1691474727457,
+          "duration": 1671
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "time": {
+              "start": 1691474725786,
+              "stop": 1691474726765,
+              "duration": 979
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") send keys(Password)",
+            "time": {
+              "start": 1691474726765,
+              "stop": 1691474727457,
+              "duration": 692
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Пароль"
+          },
+          {
+            "name": "value",
+            "value": "Password"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Кликаем на кнопку Показать пароль",
+        "time": {
+          "start": 1691474727458,
+          "stop": 1691474728045,
+          "duration": 587
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") should be(visible)",
+            "time": {
+              "start": 1691474727458,
+              "stop": 1691474727982,
+              "duration": 524
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/text_input_end_icon\") click()",
+            "time": {
+              "start": 1691474727982,
+              "stop": 1691474728045,
+              "duration": 63
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "stepsCount": 6,
+    "attachmentsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [
+    {
+      "name": "afterEach",
+      "time": {
+        "start": 1691474728045,
+        "stop": 1691474728358,
+        "duration": 313
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Закрыть приложение",
+          "time": {
+            "start": 1691474728045,
+            "stop": 1691474728358,
+            "duration": 313
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"webdriver\") close()",
+              "time": {
+                "start": 1691474728045,
+                "stop": 1691474728358,
+                "duration": 313
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "junit.platform.uniqueid",
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton()]"
+    },
+    {
+      "name": "host",
+      "value": "o27012099.local"
+    },
+    {
+      "name": "thread",
+      "value": "1987@o27012099.local.Test worker(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testClass",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testCheckTheVisibilityOfThePasswordAfterClickingTheShowPasswordButton"
+    },
+    {
+      "name": "suite",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "64f7fb78f1365d88",
+        "status": "passed",
+        "time": {
+          "start": 1691409151761,
+          "stop": 1691409159549,
+          "duration": 7788
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "8ad39cfb131b99a7.json",
+  "parameterValues": []
+}

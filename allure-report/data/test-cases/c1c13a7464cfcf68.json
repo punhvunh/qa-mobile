@@ -1,15 +1,15 @@
 {
-  "uid": "1e5329f7bceaa4e5",
-  "name": "testChecksTheHeaderName()",
-  "fullName": "tests.LoginPageTests.testChecksTheHeaderName",
-  "historyId": "11ddc055281bd45500581f8e6c6087f3",
+  "uid": "c1c13a7464cfcf68",
+  "name": "testChecksFieldLabels()",
+  "fullName": "tests.LoginPageTests.testChecksFieldLabels",
+  "historyId": "ee7992dece921fdbe51504e2105cb231",
   "time": {
-    "start": 1691409261569,
-    "stop": 1691409269017,
-    "duration": 7448
+    "start": 1691409139416,
+    "stop": 1691409146750,
+    "duration": 7334
   },
-  "description": "Проверям название заголовка",
-  "descriptionHtml": "<p>Проверям название заголовка</p>\n",
+  "description": "Проверяем лэйблы полей",
+  "descriptionHtml": "<p>Проверяем лэйблы полей</p>\n",
   "status": "passed",
   "flaky": false,
   "newFailed": false,
@@ -53,27 +53,27 @@
     {
       "name": "startDriver",
       "time": {
-        "start": 1691409261572,
-        "stop": 1691409267050,
-        "duration": 5478
+        "start": 1691409139422,
+        "stop": 1691409144796,
+        "duration": 5374
       },
       "status": "passed",
       "steps": [
         {
           "name": "Открыть приложение",
           "time": {
-            "start": 1691409261572,
-            "stop": 1691409267050,
-            "duration": 5478
+            "start": 1691409139422,
+            "stop": 1691409144796,
+            "duration": 5374
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"open\") ",
               "time": {
-                "start": 1691409261572,
-                "stop": 1691409267050,
-                "duration": 5478
+                "start": 1691409139423,
+                "stop": 1691409144796,
+                "duration": 5373
               },
               "status": "passed",
               "steps": [],
@@ -102,24 +102,24 @@
     }
   ],
   "testStage": {
-    "description": "Проверям название заголовка",
+    "description": "Проверяем лэйблы полей",
     "status": "passed",
     "steps": [
       {
-        "name": "Проверям название заголовка",
+        "name": "Проверяем лэйблы полей Логин",
         "time": {
-          "start": 1691409267051,
-          "stop": 1691409268695,
-          "duration": 1644
+          "start": 1691409144797,
+          "stop": 1691409146436,
+          "duration": 1639
         },
         "status": "passed",
         "steps": [
           {
-            "name": "$(\"By.id: com.alfabank.qapp:id/tvTitle\") should be(visible)",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
             "time": {
-              "start": 1691409267051,
-              "stop": 1691409268641,
-              "duration": 1590
+              "start": 1691409144798,
+              "stop": 1691409146384,
+              "duration": 1586
             },
             "status": "passed",
             "steps": [],
@@ -131,11 +131,11 @@
             "hasContent": false
           },
           {
-            "name": "$(\"By.id: com.alfabank.qapp:id/tvTitle\") get text()",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get text()",
             "time": {
-              "start": 1691409268642,
-              "stop": 1691409268695,
-              "duration": 53
+              "start": 1691409146384,
+              "stop": 1691409146436,
+              "duration": 52
             },
             "status": "passed",
             "steps": [],
@@ -150,8 +150,70 @@
         "attachments": [],
         "parameters": [
           {
-            "name": "headerName",
-            "value": "Вход в Alfa-Test"
+            "name": "fieldName",
+            "value": "Логин"
+          },
+          {
+            "name": "value",
+            "value": "Логин"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Проверяем лэйблы полей Пароль",
+        "time": {
+          "start": 1691409146436,
+          "stop": 1691409146487,
+          "duration": 51
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "time": {
+              "start": 1691409146436,
+              "stop": 1691409146457,
+              "duration": 21
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get text()",
+            "time": {
+              "start": 1691409146457,
+              "stop": 1691409146487,
+              "duration": 30
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Пароль"
+          },
+          {
+            "name": "value",
+            "value": "Пароль"
           }
         ],
         "shouldDisplayMessage": false,
@@ -163,7 +225,7 @@
     "attachments": [],
     "parameters": [],
     "shouldDisplayMessage": false,
-    "stepsCount": 3,
+    "stepsCount": 6,
     "attachmentsCount": 0,
     "hasContent": true
   },
@@ -171,27 +233,27 @@
     {
       "name": "afterEach",
       "time": {
-        "start": 1691409268695,
-        "stop": 1691409269017,
-        "duration": 322
+        "start": 1691409146487,
+        "stop": 1691409146749,
+        "duration": 262
       },
       "status": "passed",
       "steps": [
         {
           "name": "Закрыть приложение",
           "time": {
-            "start": 1691409268695,
-            "stop": 1691409269017,
-            "duration": 322
+            "start": 1691409146487,
+            "stop": 1691409146749,
+            "duration": 262
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"webdriver\") close()",
               "time": {
-                "start": 1691409268695,
-                "stop": 1691409269017,
-                "duration": 322
+                "start": 1691409146487,
+                "stop": 1691409146749,
+                "duration": 262
               },
               "status": "passed",
               "steps": [],
@@ -222,7 +284,7 @@
   "labels": [
     {
       "name": "junit.platform.uniqueid",
-      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testChecksTheHeaderName()]"
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testChecksFieldLabels()]"
     },
     {
       "name": "host",
@@ -250,7 +312,7 @@
     },
     {
       "name": "testMethod",
-      "value": "testChecksTheHeaderName"
+      "value": "testChecksFieldLabels"
     },
     {
       "name": "suite",
@@ -263,14 +325,12 @@
   ],
   "parameters": [],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "1e5329f7bceaa4e5.json",
+  "source": "c1c13a7464cfcf68.json",
   "parameterValues": []
 }

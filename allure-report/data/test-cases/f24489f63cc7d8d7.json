@@ -1,5 +1,5 @@
 {
-  "uid": "823e661575ca8b7d",
+  "uid": "f24489f63cc7d8d7",
   "name": "testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password",
   "fullName": "tests.LoginPageTests.testLogInToTheApplicationUsingUsernameAndPassword",
   "historyId": "8031b472e36b1f14f31f8ccbb710d032",
@@ -656,15 +656,13 @@
     }
   ],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "823e661575ca8b7d.json",
+  "source": "f24489f63cc7d8d7.json",
   "parameterValues": [
     "Login",
     "Password"

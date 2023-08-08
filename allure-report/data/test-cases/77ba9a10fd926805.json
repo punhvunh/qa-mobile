@@ -1,15 +1,15 @@
 {
-  "uid": "dcb5140890bdad6",
-  "name": "testEntersValidCharactersInLoginField()",
-  "fullName": "tests.LoginPageTests.testEntersValidCharactersInLoginField",
-  "historyId": "15ba0449ba6ee1da362c613f8ad5af6e",
+  "uid": "77ba9a10fd926805",
+  "name": "testChecksThatFieldAreEmptyAfterClickingOnThem()",
+  "fullName": "tests.LoginPageTests.testChecksThatFieldAreEmptyAfterClickingOnThem",
+  "historyId": "ab2865734c846e0aaa55ee0ee4640591",
   "time": {
-    "start": 1691409304233,
-    "stop": 1691409313121,
-    "duration": 8888
+    "start": 1691409233628,
+    "stop": 1691409242716,
+    "duration": 9088
   },
-  "description": "Ввод корректных символов в поле Логин",
-  "descriptionHtml": "<p>Ввод корректных символов в поле Логин</p>\n",
+  "description": "Проверям отсутсвие значений по умолчанию в полях логин и пароль",
+  "descriptionHtml": "<p>Проверям отсутсвие значений по умолчанию в полях логин и пароль</p>\n",
   "status": "passed",
   "flaky": false,
   "newFailed": false,
@@ -53,27 +53,27 @@
     {
       "name": "startDriver",
       "time": {
-        "start": 1691409304238,
-        "stop": 1691409309869,
-        "duration": 5631
+        "start": 1691409233631,
+        "stop": 1691409239182,
+        "duration": 5551
       },
       "status": "passed",
       "steps": [
         {
           "name": "Открыть приложение",
           "time": {
-            "start": 1691409304239,
-            "stop": 1691409309869,
-            "duration": 5630
+            "start": 1691409233631,
+            "stop": 1691409239181,
+            "duration": 5550
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"open\") ",
               "time": {
-                "start": 1691409304239,
-                "stop": 1691409309869,
-                "duration": 5630
+                "start": 1691409233631,
+                "stop": 1691409239181,
+                "duration": 5550
               },
               "status": "passed",
               "steps": [],
@@ -102,24 +102,24 @@
     }
   ],
   "testStage": {
-    "description": "Ввод корректных символов в поле Логин",
+    "description": "Проверям отсутсвие значений по умолчанию в полях логин и пароль",
     "status": "passed",
     "steps": [
       {
-        "name": "Заполняем поле Логин",
+        "name": "Проверяем что поле пустое",
         "time": {
-          "start": 1691409309870,
-          "stop": 1691409312114,
-          "duration": 2244
+          "start": 1691409240359,
+          "stop": 1691409241292,
+          "duration": 933
         },
         "status": "passed",
         "steps": [
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
             "time": {
-              "start": 1691409309870,
-              "stop": 1691409311447,
-              "duration": 1577
+              "start": 1691409240359,
+              "stop": 1691409240380,
+              "duration": 21
             },
             "status": "passed",
             "steps": [],
@@ -131,11 +131,27 @@
             "hasContent": false
           },
           {
-            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") send keys(ValidLogin123.-_ /',)",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") click()",
             "time": {
-              "start": 1691409311447,
-              "stop": 1691409312114,
-              "duration": 667
+              "start": 1691409240381,
+              "stop": 1691409240447,
+              "duration": 66
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/textinput_placeholder\") get text()",
+            "time": {
+              "start": 1691409240447,
+              "stop": 1691409241292,
+              "duration": 845
             },
             "status": "passed",
             "steps": [],
@@ -149,77 +165,67 @@
         ],
         "attachments": [],
         "parameters": [
-          {
-            "name": "fieldName",
-            "value": "Логин"
-          },
-          {
-            "name": "value",
-            "value": "ValidLogin123.-_ /',"
-          }
-        ],
-        "shouldDisplayMessage": false,
-        "stepsCount": 2,
-        "attachmentsCount": 0,
-        "hasContent": true
-      },
-      {
-        "name": "Проверяем что поле заполнено",
-        "time": {
-          "start": 1691409312798,
-          "stop": 1691409312823,
-          "duration": 25
-        },
-        "status": "passed",
-        "steps": [
-          {
-            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get text()",
-            "time": {
-              "start": 1691409312798,
-              "stop": 1691409312822,
-              "duration": 24
-            },
-            "status": "passed",
-            "steps": [],
-            "attachments": [],
-            "parameters": [],
-            "shouldDisplayMessage": false,
-            "stepsCount": 0,
-            "attachmentsCount": 0,
-            "hasContent": false
-          }
-        ],
-        "attachments": [],
-        "parameters": [
-          {
-            "name": "expectedText",
-            "value": "ValidLogin123.-_ /',"
-          },
           {
             "name": "fieldElement",
-            "value": "<null class=\"android.widget.EditText\" name=\"ValidLogin123.-_ /',\">ValidLogin123.-_ /',</null>"
+            "value": "<null class=\"android.widget.EditText\" name=\"Логин\">Логин</null>"
+          },
+          {
+            "name": "placeholder",
+            "value": "NoSuchElementException: An element could not be located on the page using the given search parameters."
           }
         ],
         "shouldDisplayMessage": false,
-        "stepsCount": 1,
+        "stepsCount": 3,
         "attachmentsCount": 0,
         "hasContent": true
       },
       {
-        "name": "Не видим ошибку после авторизации с правильным данными под полем",
+        "name": "Проверяем что поле пустое",
         "time": {
-          "start": 1691409312823,
-          "stop": 1691409312830,
-          "duration": 7
+          "start": 1691409241619,
+          "stop": 1691409242377,
+          "duration": 758
         },
         "status": "passed",
         "steps": [
           {
-            "name": "$(\"By.id: \") should be(hidden)",
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
             "time": {
-              "start": 1691409312824,
-              "stop": 1691409312830,
-              "duration": 6
+              "start": 1691409241619,
+              "stop": 1691409241638,
+              "duration": 19
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") click()",
+            "time": {
+              "start": 1691409241638,
+              "stop": 1691409241697,
+              "duration": 59
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/textinput_placeholder\") get text()",
+            "time": {
+              "start": 1691409241697,
+              "stop": 1691409242377,
+              "duration": 680
             },
             "status": "passed",
             "steps": [],
@@ -232,9 +238,18 @@
           }
         ],
         "attachments": [],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "fieldElement",
+            "value": "<null class=\"android.widget.EditText\" name=\"Пароль\">Пароль</null>"
+          },
+          {
+            "name": "placeholder",
+            "value": "<null class=\"android.widget.TextView\" name></null>"
+          }
+        ],
         "shouldDisplayMessage": false,
-        "stepsCount": 1,
+        "stepsCount": 3,
         "attachmentsCount": 0,
         "hasContent": true
       }
@@ -242,7 +257,7 @@
     "attachments": [],
     "parameters": [],
     "shouldDisplayMessage": false,
-    "stepsCount": 7,
+    "stepsCount": 8,
     "attachmentsCount": 0,
     "hasContent": true
   },
@@ -250,27 +265,27 @@
     {
       "name": "afterEach",
       "time": {
-        "start": 1691409312830,
-        "stop": 1691409313121,
-        "duration": 291
+        "start": 1691409242379,
+        "stop": 1691409242715,
+        "duration": 336
       },
       "status": "passed",
       "steps": [
         {
           "name": "Закрыть приложение",
           "time": {
-            "start": 1691409312830,
-            "stop": 1691409313121,
-            "duration": 291
+            "start": 1691409242379,
+            "stop": 1691409242715,
+            "duration": 336
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"webdriver\") close()",
               "time": {
-                "start": 1691409312831,
-                "stop": 1691409313121,
-                "duration": 290
+                "start": 1691409242379,
+                "stop": 1691409242714,
+                "duration": 335
               },
               "status": "passed",
               "steps": [],
@@ -301,7 +316,7 @@
   "labels": [
     {
       "name": "junit.platform.uniqueid",
-      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testEntersValidCharactersInLoginField()]"
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[method:testChecksThatFieldAreEmptyAfterClickingOnThem()]"
     },
     {
       "name": "host",
@@ -329,7 +344,7 @@
     },
     {
       "name": "testMethod",
-      "value": "testEntersValidCharactersInLoginField"
+      "value": "testChecksThatFieldAreEmptyAfterClickingOnThem"
     },
     {
       "name": "suite",
@@ -342,14 +357,12 @@
   ],
   "parameters": [],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "dcb5140890bdad6.json",
+  "source": "77ba9a10fd926805.json",
   "parameterValues": []
 }

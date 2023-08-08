@@ -1,12 +1,12 @@
 {
-  "uid": "53505aeda7a9dd47",
+  "uid": "c96b9b7891dee43d",
   "name": "testTriesToLogInWithTheWrongLogin()",
   "fullName": "tests.LoginPageTests.testTriesToLogInWithTheWrongLogin",
   "historyId": "cf76488c4eae4e81c3877502fdb025c5",
   "time": {
-    "start": 1691409318131,
-    "stop": 1691409329420,
-    "duration": 11289
+    "start": 1691474885239,
+    "stop": 1691474896639,
+    "duration": 11400
   },
   "description": "Пробуем авторизоваться используя неправильный логин",
   "descriptionHtml": "<p>Пробуем авторизоваться используя неправильный логин</p>\n",
@@ -15,15 +15,15 @@
   "newFailed": false,
   "newBroken": false,
   "newPassed": false,
-  "retriesCount": 0,
+  "retriesCount": 1,
   "retriesStatusChange": false,
   "beforeStages": [
     {
       "name": "setup",
       "time": {
-        "start": 1691409049765,
-        "stop": 1691409049971,
-        "duration": 206
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
       },
       "status": "passed",
       "steps": [],
@@ -37,8 +37,8 @@
     {
       "name": "init",
       "time": {
-        "start": 1691409049975,
-        "stop": 1691409049975,
+        "start": 1691474624264,
+        "stop": 1691474624264,
         "duration": 0
       },
       "status": "passed",
@@ -53,27 +53,27 @@
     {
       "name": "startDriver",
       "time": {
-        "start": 1691409318135,
-        "stop": 1691409323572,
-        "duration": 5437
+        "start": 1691474885239,
+        "stop": 1691474891305,
+        "duration": 6066
       },
       "status": "passed",
       "steps": [
         {
           "name": "Открыть приложение",
           "time": {
-            "start": 1691409318135,
-            "stop": 1691409323572,
-            "duration": 5437
+            "start": 1691474885239,
+            "stop": 1691474891305,
+            "duration": 6066
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"open\") ",
               "time": {
-                "start": 1691409318136,
-                "stop": 1691409323572,
-                "duration": 5436
+                "start": 1691474885239,
+                "stop": 1691474891305,
+                "duration": 6066
               },
               "status": "passed",
               "steps": [],
@@ -108,18 +108,18 @@
       {
         "name": "Заполняем поле Логин",
         "time": {
-          "start": 1691409323573,
-          "stop": 1691409325200,
-          "duration": 1627
+          "start": 1691474891305,
+          "stop": 1691474892312,
+          "duration": 1007
         },
         "status": "passed",
         "steps": [
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
             "time": {
-              "start": 1691409323573,
-              "stop": 1691409324554,
-              "duration": 981
+              "start": 1691474891305,
+              "stop": 1691474892238,
+              "duration": 933
             },
             "status": "passed",
             "steps": [],
@@ -133,9 +133,9 @@
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") send keys(Logins)",
             "time": {
-              "start": 1691409324554,
-              "stop": 1691409325200,
-              "duration": 646
+              "start": 1691474892239,
+              "stop": 1691474892312,
+              "duration": 73
             },
             "status": "passed",
             "steps": [],
@@ -166,18 +166,18 @@
       {
         "name": "Заполняем поле Пароль",
         "time": {
-          "start": 1691409325200,
-          "stop": 1691409326403,
-          "duration": 1203
+          "start": 1691474892312,
+          "stop": 1691474893510,
+          "duration": 1198
         },
         "status": "passed",
         "steps": [
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
             "time": {
-              "start": 1691409325200,
-              "stop": 1691409325739,
-              "duration": 539
+              "start": 1691474892312,
+              "stop": 1691474892836,
+              "duration": 524
             },
             "status": "passed",
             "steps": [],
@@ -191,9 +191,9 @@
           {
             "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") send keys(Password)",
             "time": {
-              "start": 1691409325739,
-              "stop": 1691409326403,
-              "duration": 664
+              "start": 1691474892836,
+              "stop": 1691474893510,
+              "duration": 674
             },
             "status": "passed",
             "steps": [],
@@ -224,27 +224,27 @@
       {
         "name": "Кликаем на кнопку вход и видим ошибку",
         "time": {
-          "start": 1691409326404,
-          "stop": 1691409329102,
-          "duration": 2698
+          "start": 1691474893510,
+          "stop": 1691474896251,
+          "duration": 2741
         },
         "status": "passed",
         "steps": [
           {
             "name": "Кликаем на кнопку вход",
             "time": {
-              "start": 1691409326404,
-              "stop": 1691409326998,
-              "duration": 594
+              "start": 1691474893510,
+              "stop": 1691474894128,
+              "duration": 618
             },
             "status": "passed",
             "steps": [
               {
                 "name": "$(\"By.id: com.alfabank.qapp:id/btnConfirm\") should be(visible)",
                 "time": {
-                  "start": 1691409326404,
-                  "stop": 1691409326922,
-                  "duration": 518
+                  "start": 1691474893510,
+                  "stop": 1691474894034,
+                  "duration": 524
                 },
                 "status": "passed",
                 "steps": [],
@@ -258,9 +258,9 @@
               {
                 "name": "$(\"By.id: com.alfabank.qapp:id/btnConfirm\") click()",
                 "time": {
-                  "start": 1691409326922,
-                  "stop": 1691409326998,
-                  "duration": 76
+                  "start": 1691474894034,
+                  "stop": 1691474894128,
+                  "duration": 94
                 },
                 "status": "passed",
                 "steps": [],
@@ -282,18 +282,18 @@
           {
             "name": "Видим ошибку после авторизации с неправильным данными",
             "time": {
-              "start": 1691409329003,
-              "stop": 1691409329102,
-              "duration": 99
+              "start": 1691474896133,
+              "stop": 1691474896251,
+              "duration": 118
             },
             "status": "passed",
             "steps": [
               {
                 "name": "$(\"By.id: com.alfabank.qapp:id/tvError\") should be(visible)",
                 "time": {
-                  "start": 1691409329004,
-                  "stop": 1691409329075,
-                  "duration": 71
+                  "start": 1691474896133,
+                  "stop": 1691474896217,
+                  "duration": 84
                 },
                 "status": "passed",
                 "steps": [],
@@ -307,9 +307,9 @@
               {
                 "name": "$(\"By.id: com.alfabank.qapp:id/tvError\") get text()",
                 "time": {
-                  "start": 1691409329076,
-                  "stop": 1691409329102,
-                  "duration": 26
+                  "start": 1691474896218,
+                  "stop": 1691474896251,
+                  "duration": 33
                 },
                 "status": "passed",
                 "steps": [],
@@ -358,27 +358,27 @@
     {
       "name": "afterEach",
       "time": {
-        "start": 1691409329102,
-        "stop": 1691409329420,
-        "duration": 318
+        "start": 1691474896251,
+        "stop": 1691474896638,
+        "duration": 387
       },
       "status": "passed",
       "steps": [
         {
           "name": "Закрыть приложение",
           "time": {
-            "start": 1691409329102,
-            "stop": 1691409329420,
-            "duration": 318
+            "start": 1691474896251,
+            "stop": 1691474896638,
+            "duration": 387
           },
           "status": "passed",
           "steps": [
             {
               "name": "$(\"webdriver\") close()",
               "time": {
-                "start": 1691409329102,
-                "stop": 1691409329420,
-                "duration": 318
+                "start": 1691474896251,
+                "stop": 1691474896638,
+                "duration": 387
               },
               "status": "passed",
               "steps": [],
@@ -417,7 +417,7 @@
     },
     {
       "name": "thread",
-      "value": "2173@o27012099.local.Test worker(1)"
+      "value": "1987@o27012099.local.Test worker(1)"
     },
     {
       "name": "framework",
@@ -454,10 +454,20 @@
   "retry": false,
   "extra": {
     "severity": "normal",
-    "retries": [],
+    "retries": [
+      {
+        "uid": "f23afabca2f3415d",
+        "status": "passed",
+        "time": {
+          "start": 1691409318131,
+          "stop": 1691409329420,
+          "duration": 11289
+        }
+      }
+    ],
     "categories": [],
     "tags": []
   },
-  "source": "53505aeda7a9dd47.json",
+  "source": "c96b9b7891dee43d.json",
   "parameterValues": []
 }

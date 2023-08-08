@@ -1,5 +1,5 @@
 {
-  "uid": "344cff2a8c7c3b03",
+  "uid": "56936f281affc15b",
   "name": "testChecksTheHeaderNameAfterLogIn(String, String) [1] Login, Password",
   "fullName": "tests.LoginPageTests.testChecksTheHeaderNameAfterLogIn",
   "historyId": "825b93e10d632bf2e00ccdfd1b758f98",
@@ -710,15 +710,13 @@
     }
   ],
   "links": [],
-  "hidden": false,
-  "retry": false,
+  "hidden": true,
+  "retry": true,
   "extra": {
-    "severity": "normal",
-    "retries": [],
     "categories": [],
     "tags": []
   },
-  "source": "344cff2a8c7c3b03.json",
+  "source": "56936f281affc15b.json",
   "parameterValues": [
     "Login",
     "Password"

@@ -10,38 +10,38 @@
           "children": [
             {
               "name": "testLoginPageScreenshotFail()",
-              "uid": "cb5f6ad11b52696",
+              "uid": "988d90a5f726f656",
               "parentUid": "3ea103dd0ea6ae8f83aaefa2df67ae54",
               "status": "broken",
               "time": {
-                "start": 1691409346349,
-                "stop": 1691409354595,
-                "duration": 8246
+                "start": 1691474598202,
+                "stop": 1691474611819,
+                "duration": 13617
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 0,
+              "retriesCount": 1,
               "retriesStatusChange": false,
               "parameters": [],
               "tags": []
             },
             {
               "name": "testLoginPageScreenshot()",
-              "uid": "bc206750c944a57",
+              "uid": "69765aa1b6555622",
               "parentUid": "3ea103dd0ea6ae8f83aaefa2df67ae54",
               "status": "broken",
               "time": {
-                "start": 1691409359676,
-                "stop": 1691409367563,
-                "duration": 7887
+                "start": 1691474616881,
+                "stop": 1691474624259,
+                "duration": 7378
               },
               "flaky": false,
               "newFailed": false,
               "newPassed": false,
               "newBroken": false,
-              "retriesCount": 0,
+              "retriesCount": 1,
               "retriesStatusChange": false,
               "parameters": [],
               "tags": []

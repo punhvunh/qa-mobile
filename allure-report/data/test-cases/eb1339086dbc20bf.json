@@ -1,0 +1,682 @@
+{
+  "uid": "eb1339086dbc20bf",
+  "name": "testLogInToTheApplicationUsingUsernameAndPassword(String, String) [1] Login, Password",
+  "fullName": "tests.LoginPageTests.testLogInToTheApplicationUsingUsernameAndPassword",
+  "historyId": "8031b472e36b1f14f31f8ccbb710d032",
+  "time": {
+    "start": 1691474677385,
+    "stop": 1691474702648,
+    "duration": 25263
+  },
+  "description": "Авторизируемcя в приложении используя логин и пароль",
+  "descriptionHtml": "<p>Авторизируемcя в приложении используя логин и пароль</p>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 1,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "setup",
+      "time": {
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "init",
+      "time": {
+        "start": 1691474624264,
+        "stop": 1691474624264,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "hasContent": false
+    },
+    {
+      "name": "startDriver",
+      "time": {
+        "start": 1691474677386,
+        "stop": 1691474684286,
+        "duration": 6900
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Открыть приложение",
+          "time": {
+            "start": 1691474677386,
+            "stop": 1691474684286,
+            "duration": 6900
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"open\") ",
+              "time": {
+                "start": 1691474677386,
+                "stop": 1691474684286,
+                "duration": 6900
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "testStage": {
+    "description": "Авторизируемcя в приложении используя логин и пароль",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "Заполняем поле Логин посимвольно",
+        "time": {
+          "start": 1691474684294,
+          "stop": 1691474691236,
+          "duration": 6942
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") should be(visible)",
+            "time": {
+              "start": 1691474684294,
+              "stop": 1691474685268,
+              "duration": 974
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") click()",
+            "time": {
+              "start": 1691474685268,
+              "stop": 1691474685378,
+              "duration": 110
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") clear()",
+            "time": {
+              "start": 1691474685378,
+              "stop": 1691474686698,
+              "duration": 1320
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get wrapped element()",
+            "time": {
+              "start": 1691474686704,
+              "stop": 1691474687334,
+              "duration": 630
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get wrapped element()",
+            "time": {
+              "start": 1691474687646,
+              "stop": 1691474688130,
+              "duration": 484
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get wrapped element()",
+            "time": {
+              "start": 1691474688404,
+              "stop": 1691474689084,
+              "duration": 680
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get wrapped element()",
+            "time": {
+              "start": 1691474689385,
+              "stop": 1691474690023,
+              "duration": 638
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etUsername\") get wrapped element()",
+            "time": {
+              "start": 1691474690309,
+              "stop": 1691474690943,
+              "duration": 634
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Логин"
+          },
+          {
+            "name": "value",
+            "value": "Login"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 8,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Заполняем поле Пароль посимвольно",
+        "time": {
+          "start": 1691474691236,
+          "stop": 1691474698686,
+          "duration": 7450
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") should be(visible)",
+            "time": {
+              "start": 1691474691236,
+              "stop": 1691474691892,
+              "duration": 656
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") click()",
+            "time": {
+              "start": 1691474691892,
+              "stop": 1691474692624,
+              "duration": 732
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") clear()",
+            "time": {
+              "start": 1691474692624,
+              "stop": 1691474692692,
+              "duration": 68
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474692692,
+              "stop": 1691474693346,
+              "duration": 654
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474693657,
+              "stop": 1691474694078,
+              "duration": 421
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474694371,
+              "stop": 1691474694799,
+              "duration": 428
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474695103,
+              "stop": 1691474695505,
+              "duration": 402
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474695799,
+              "stop": 1691474696207,
+              "duration": 408
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474696486,
+              "stop": 1691474696929,
+              "duration": 443
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474697237,
+              "stop": 1691474697658,
+              "duration": 421
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/etPassword\") get wrapped element()",
+            "time": {
+              "start": 1691474697967,
+              "stop": 1691474698401,
+              "duration": 434
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [
+          {
+            "name": "fieldName",
+            "value": "Пароль"
+          },
+          {
+            "name": "value",
+            "value": "Password"
+          }
+        ],
+        "shouldDisplayMessage": false,
+        "stepsCount": 11,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Кликаем на кнопку вход",
+        "time": {
+          "start": 1691474698687,
+          "stop": 1691474699150,
+          "duration": 463
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/btnConfirm\") should be(visible)",
+            "time": {
+              "start": 1691474698687,
+              "stop": 1691474699094,
+              "duration": 407
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          },
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/btnConfirm\") click()",
+            "time": {
+              "start": 1691474699094,
+              "stop": 1691474699150,
+              "duration": 56
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "stepsCount": 2,
+        "attachmentsCount": 0,
+        "hasContent": true
+      },
+      {
+        "name": "Не видим кнопку вход",
+        "time": {
+          "start": 1691474699150,
+          "stop": 1691474702328,
+          "duration": 3178
+        },
+        "status": "passed",
+        "steps": [
+          {
+            "name": "$(\"By.id: com.alfabank.qapp:id/btnConfirm\") should be(hidden)",
+            "time": {
+              "start": 1691474699150,
+              "stop": 1691474702328,
+              "duration": 3178
+            },
+            "status": "passed",
+            "steps": [],
+            "attachments": [],
+            "parameters": [],
+            "shouldDisplayMessage": false,
+            "stepsCount": 0,
+            "attachmentsCount": 0,
+            "hasContent": false
+          }
+        ],
+        "attachments": [],
+        "parameters": [],
+        "shouldDisplayMessage": false,
+        "stepsCount": 1,
+        "attachmentsCount": 0,
+        "hasContent": true
+      }
+    ],
+    "attachments": [],
+    "parameters": [],
+    "shouldDisplayMessage": false,
+    "stepsCount": 26,
+    "attachmentsCount": 0,
+    "hasContent": true
+  },
+  "afterStages": [
+    {
+      "name": "afterEach",
+      "time": {
+        "start": 1691474702331,
+        "stop": 1691474702647,
+        "duration": 316
+      },
+      "status": "passed",
+      "steps": [
+        {
+          "name": "Закрыть приложение",
+          "time": {
+            "start": 1691474702331,
+            "stop": 1691474702647,
+            "duration": 316
+          },
+          "status": "passed",
+          "steps": [
+            {
+              "name": "$(\"webdriver\") close()",
+              "time": {
+                "start": 1691474702331,
+                "stop": 1691474702647,
+                "duration": 316
+              },
+              "status": "passed",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "shouldDisplayMessage": false,
+              "stepsCount": 0,
+              "attachmentsCount": 0,
+              "hasContent": false
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "shouldDisplayMessage": false,
+          "stepsCount": 1,
+          "attachmentsCount": 0,
+          "hasContent": true
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "shouldDisplayMessage": false,
+      "stepsCount": 2,
+      "attachmentsCount": 0,
+      "hasContent": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "junit.platform.uniqueid",
+      "value": "[engine:junit-jupiter]/[class:tests.LoginPageTests]/[test-template:testLogInToTheApplicationUsingUsernameAndPassword(java.lang.String, java.lang.String)]/[test-template-invocation:#1]"
+    },
+    {
+      "name": "host",
+      "value": "o27012099.local"
+    },
+    {
+      "name": "thread",
+      "value": "1987@o27012099.local.Test worker(1)"
+    },
+    {
+      "name": "framework",
+      "value": "junit-platform"
+    },
+    {
+      "name": "language",
+      "value": "java"
+    },
+    {
+      "name": "package",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testClass",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "testLogInToTheApplicationUsingUsernameAndPassword"
+    },
+    {
+      "name": "suite",
+      "value": "tests.LoginPageTests"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "arg0",
+      "value": "Login"
+    },
+    {
+      "name": "arg1",
+      "value": "Password"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [
+      {
+        "uid": "f24489f63cc7d8d7",
+        "status": "passed",
+        "time": {
+          "start": 1691409110907,
+          "stop": 1691409134393,
+          "duration": 23486
+        }
+      }
+    ],
+    "categories": [],
+    "tags": []
+  },
+  "source": "eb1339086dbc20bf.json",
+  "parameterValues": [
+    "Login",
+    "Password"
+  ]
+}
