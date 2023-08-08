@@ -48,7 +48,7 @@ public class LogInPage extends BasePage {
     }
 
     @Step("Проверяем кликабельность кнопки")
-    public LogInPage checksThatButtonLoInIsClickable(){
+    public LogInPage checksThatButtonLogInIsClickable(){
         elementIsClickable(confirmButton);
         return this;
     }

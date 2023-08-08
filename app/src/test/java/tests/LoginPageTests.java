@@ -48,7 +48,7 @@ public class LoginPageTests extends BaseTest {
     @Description("Проверяем кликабельность кнопки Вход")
     @Test
     void checksThatButtonLogInIsClickable(){
-        loginPage.checksThatButtonLoInIsClickable();
+        loginPage.checksThatButtonLogInIsClickable();
     }
 
     @Description("Проверям отсутсвие значений по умолчанию в полях логин и пароль")
