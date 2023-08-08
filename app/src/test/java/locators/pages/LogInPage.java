@@ -25,18 +25,14 @@ public class LogInPage extends BasePage {
         return this;
     }
 
-    @Step("Проверяем лэйблы полей {fieldName}")
-    public LogInPage checksFieldLabels(String fieldName, String value) {
-        SelenideElement fieldElement = switch (fieldName) {
+    @Step("Проверяем название поля {fieldName} или кидаем ошибку если такого поля нет")
+    private static SelenideElement checksFieldNameOrThrowsException(String fieldName) {
+        return switch (fieldName) {
             case "Логин" -> loginField;
             case "Пароль" -> passwordField;
             default ->
                     throw new IllegalArgumentException("Некорректное название поля: " + fieldName);
         };
-        elementIsVisible(fieldElement);
-        String actualLabel = getsTextAttributeFromElement(fieldElement);
-        assertEquals(actualLabel, value);
-        return this;
     }
 
     @Step("Проверям название кнопки")
@@ -47,21 +43,30 @@ public class LogInPage extends BasePage {
         return this;
     }
 
+    @Step("Проверяем лэйблы полей {fieldName}")
+    public LogInPage checksFieldLabels(String fieldName, String value) {
+        SelenideElement fieldElement = checksFieldNameOrThrowsException(fieldName);
+        elementIsVisible(fieldElement);
+        String actualLabel = getsTextAttributeFromElement(fieldElement);
+        assertEquals(actualLabel, value);
+        return this;
+    }
+
     @Step("Проверяем кликабельность кнопки")
-    public LogInPage checksThatButtonLogInIsClickable(){
+    public LogInPage checksThatButtonLogInIsClickable() {
         elementIsClickable(confirmButton);
         return this;
     }
 
+    @Step("Проверяем кликабельность поля {fieldName}")
+    public void checksThatFieldIsClickable(String fieldName) {
+        SelenideElement fieldElement = checksFieldNameOrThrowsException(fieldName);
+        elementIsClickable(fieldElement);
+    }
 
     @Step("Заполняем поле {fieldName}")
     public LogInPage fillsInTheField(String fieldName, String value) {
-        SelenideElement fieldElement = switch (fieldName) {
-            case "Логин" -> loginField;
-            case "Пароль" -> passwordField;
-            default ->
-                    throw new IllegalArgumentException("Некорректное название поля: " + fieldName);
-        };
+        SelenideElement fieldElement = checksFieldNameOrThrowsException(fieldName);
         elementIsVisible(fieldElement);
         typesTextIntoField(fieldElement, value);
         return this;
@@ -69,12 +74,7 @@ public class LogInPage extends BasePage {
 
     @Step("Заполняем поле {fieldName} посимвольно")
     public LogInPage fillsInTheFieldCharacterByCharacter(String fieldName, String value) {
-        SelenideElement fieldElement = switch (fieldName) {
-            case "Логин" -> loginField;
-            case "Пароль" -> passwordField;
-            default ->
-                    throw new IllegalArgumentException("Некорректное название поля: " + fieldName);
-        };
+        SelenideElement fieldElement = checksFieldNameOrThrowsException(fieldName);
         elementIsVisible(fieldElement).click();
         fillsFieldCharacterByCharacter(fieldElement, value);
         return this;

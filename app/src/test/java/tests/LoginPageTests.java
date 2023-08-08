@@ -31,7 +31,6 @@ public class LoginPageTests extends BaseTest {
         loginPage.checksTheHeaderName(LoginPageConstants.HEADER_LOG_IN_ALFA_TEST);
     }
 
-
     @Description("Проверяем лэйблы полей")
     @Test
     void testChecksFieldLabels() {
@@ -47,8 +46,15 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Проверяем кликабельность кнопки Вход")
     @Test
-    void checksThatButtonLogInIsClickable(){
+    void checksThatButtonLogInIsClickable() {
         loginPage.checksThatButtonLogInIsClickable();
+    }
+
+    @Description("Проверяем кликабельность полей Логин и Пароль")
+    @Test
+    void checksThatFieldsLoginAndPasswordAreClickable() {
+        loginPage.checksThatFieldIsClickable(LoginPageConstants.LOGIN_FIELD);
+        loginPage.checksThatFieldIsClickable(LoginPageConstants.PASSWORD_FIELD);
     }
 
     @Description("Проверям отсутсвие значений по умолчанию в полях логин и пароль")
