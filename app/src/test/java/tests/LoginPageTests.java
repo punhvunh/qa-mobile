@@ -42,7 +42,13 @@ public class LoginPageTests extends BaseTest {
     @Description("Проверям название кнопки")
     @Test
     void testChecksButtonName() {
-        loginPage.checksButtonName(LoginPageConstants.LOGIN);
+        loginPage.checksButtonName(LoginPageConstants.LOGIN_BUTTON);
+    }
+
+    @Description("Проверяем кликабельность кнопки Вход")
+    @Test
+    void checksThatButtonLogInIsClickable(){
+        loginPage.checksThatButtonLoInIsClickable();
     }
 
     @Description("Проверям отсутсвие значений по умолчанию в полях логин и пароль")
@@ -83,7 +89,7 @@ public class LoginPageTests extends BaseTest {
     @Test
     void testEntersValidCharactersInLoginField() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.VALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS);
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.VALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.VALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
         loginPage.doesNotSeeErrorAfterTryingToLogInUsingCorrectDataUnderField();
     }
 
@@ -92,7 +98,7 @@ public class LoginPageTests extends BaseTest {
     void testEntersMaxCharacterLimitInLoginField() {
         loginPage.checksAmountOfCharacters(LoginPageConstants.MAX_CHARACTERS);
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.MAX_CHARACTERS);
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, loginField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, loginField);
         loginPage.doesNotSeeErrorAfterTryingToLogInUsingCorrectDataUnderField();
     }
 
@@ -100,7 +106,7 @@ public class LoginPageTests extends BaseTest {
     @Test
     void testEntersInvalidCharactersInLoginField() {
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.INVALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS);
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.INVALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.INVALID_LOGIN_DATA_WITH_DIFFERENT_CHARACTERS, loginField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
     }
 
@@ -109,7 +115,7 @@ public class LoginPageTests extends BaseTest {
     void testEntersMoreThanTheMaximumNumberOfCharactersInTheLoginField() {
         loginPage.checksAmountOfCharacters(LoginPageConstants.MAX_CHARACTERS + "X");
         loginPage.fillsInTheField(LoginPageConstants.LOGIN_FIELD, LoginPageConstants.MAX_CHARACTERS + "X");
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", loginField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", loginField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
     }
 
@@ -117,7 +123,7 @@ public class LoginPageTests extends BaseTest {
     @Test
     void testEntersMaxCharacterLimitInPasswordField() {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.MAX_CHARACTERS);
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, passwordField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.MAX_CHARACTERS, passwordField);
         loginPage.doesNotSeeErrorAfterTryingToLogInUsingCorrectDataUnderField();
     }
 
@@ -125,7 +131,7 @@ public class LoginPageTests extends BaseTest {
     @Test
     void testEntersMoreThanTheMaximumNumberOfCharactersInThePasswordField() {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.MAX_CHARACTERS + "X");
-        loginPage.checksThatFillIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", passwordField);
+        loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", passwordField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
     }
 

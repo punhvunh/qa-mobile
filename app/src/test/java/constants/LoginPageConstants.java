@@ -8,7 +8,7 @@ public class LoginPageConstants {
     public static final String CORRECT_PASSWORD = "Password";
     public static final String INCORRECT_LOGIN = "Logins";
     public static final String INCORRECT_PASSWORD = "Passwords";
-    public static final String LOGIN = "Вход";
+    public static final String LOGIN_BUTTON = "Вход";
     public static final String HEADER_LOG_IN_ALFA_TEST = "Вход в Alfa-Test";
     public static final String HEADER_LOG_IN_ALFA_TEST_EXECUTED = "Вход в Alfa-Test выполнен";
     public static final String INCORRECT_DATA_ENTERED_ERROR = "Введены неверные данные";

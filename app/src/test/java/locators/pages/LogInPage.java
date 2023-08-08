@@ -47,6 +47,13 @@ public class LogInPage extends BasePage {
         return this;
     }
 
+    @Step("Проверяем кликабельность кнопки")
+    public LogInPage checksThatButtonLoInIsClickable(){
+        elementIsClickable(confirmButton);
+        return this;
+    }
+
+
     @Step("Заполняем поле {fieldName}")
     public LogInPage fillsInTheField(String fieldName, String value) {
         SelenideElement fieldElement = switch (fieldName) {
@@ -87,7 +94,7 @@ public class LogInPage extends BasePage {
     }
 
     @Step("Проверяем что поле заполнено")
-    public LogInPage checksThatFillIsNotEmpty(String expectedText, SelenideElement fieldElement) {
+    public LogInPage checksThatFieldIsNotEmpty(String expectedText, SelenideElement fieldElement) {
         String actualText = getsTextAttributeFromElement(fieldElement);
         assertEquals(actualText, expectedText);
         return this;

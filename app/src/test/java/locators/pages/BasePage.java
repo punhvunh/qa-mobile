@@ -26,6 +26,10 @@ public class BasePage {
         return element.shouldBe(Condition.hidden);
     }
 
+    public static SelenideElement elementIsClickable(SelenideElement element){
+        return element.shouldNotBe(Condition.hidden).shouldBe(Condition.enabled);
+    }
+
     public static String getsTextAttributeFromElement(SelenideElement element) {
         return element.getText();
     }
