@@ -4,3 +4,4 @@
 *.pb
 .idea
 .gradle
+.allure-report
