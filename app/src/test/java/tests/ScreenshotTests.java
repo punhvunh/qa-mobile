@@ -1,7 +1,7 @@
 package tests;
 
 import constants.LoginPageConstants;
-import locators.pages.LogInPage;
+import pages.LogInPage;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

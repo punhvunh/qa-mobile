@@ -1,4 +1,4 @@
-package locators.pages;
+package pages;
 
 import static org.junit.Assert.assertEquals;
 import static locators.LogInPageLocators.confirmButton;
