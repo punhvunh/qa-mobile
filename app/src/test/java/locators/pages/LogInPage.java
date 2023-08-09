@@ -52,7 +52,7 @@ public class LogInPage extends BasePage {
         return this;
     }
 
-    @Step("Проверяем кликабельность кнопки")
+    @Step("Проверяем кликабельность кнопки Вход")
     public LogInPage checksThatButtonLogInIsClickable() {
         elementIsClickable(confirmButton);
         return this;
@@ -117,6 +117,12 @@ public class LogInPage extends BasePage {
     @Step("Не видим кнопку вход")
     public LogInPage doesNotSeeLogInButton() {
         elementIsNotVisible(confirmButton);
+        return this;
+    }
+
+    @Step("Проверяем кликабельность кнопки Показать пароль")
+    public LogInPage checksThatButtonShowPassordIsClickable() {
+        elementIsClickable(showPasswordButton);
         return this;
     }
 

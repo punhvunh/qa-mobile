@@ -46,13 +46,13 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Проверяем кликабельность кнопки Вход")
     @Test
-    void checksThatButtonLogInIsClickable() {
+    void testChecksThatButtonLogInIsClickable() {
         loginPage.checksThatButtonLogInIsClickable();
     }
 
     @Description("Проверяем кликабельность полей Логин и Пароль")
     @Test
-    void checksThatFieldsLoginAndPasswordAreClickable() {
+    void testChecksThatFieldsLoginAndPasswordAreClickable() {
         loginPage.checksThatFieldIsClickable(LoginPageConstants.LOGIN_FIELD);
         loginPage.checksThatFieldIsClickable(LoginPageConstants.PASSWORD_FIELD);
     }
@@ -139,6 +139,12 @@ public class LoginPageTests extends BaseTest {
         loginPage.fillsInTheField(LoginPageConstants.PASSWORD_FIELD, LoginPageConstants.MAX_CHARACTERS + "X");
         loginPage.checksThatFieldIsNotEmpty(LoginPageConstants.MAX_CHARACTERS + "X", passwordField);
         loginPage.seesErrorAfterTryingToLogInUsingIncorrectDataUnderField(LoginPageConstants.INVALID_VALUE);
+    }
+
+    @Description("Проверяем кликабельность кнопки Показать пароль")
+    @Test
+    void testChecksThatButtonShowPasswordIsClickable() {
+        loginPage.checksThatButtonShowPassordIsClickable();
     }
 
     @Description("Проверяем видимость пароля после нажатия на кнопку Показать пароль")
