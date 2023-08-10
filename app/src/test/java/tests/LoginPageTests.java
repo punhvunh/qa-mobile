@@ -9,7 +9,11 @@ import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import constants.LoginPageConstants;
 import io.qameta.allure.Description;
@@ -66,12 +70,20 @@ public class LoginPageTests extends BaseTest {
 
     @Description("Авторизируемcя в приложении используя логин и пароль")
     @ParameterizedTest
-    @CsvSource("Login, Password")
+//    @CsvSource("Login, Password")
+    @MethodSource("getLoginAndPassword")
     void testLogInToTheApplicationUsingUsernameAndPassword(String login, String password) {
         loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.LOGIN_FIELD, login);
         loginPage.fillsInTheFieldCharacterByCharacter(LoginPageConstants.PASSWORD_FIELD, password);
         loginPage.clicksOnLogInButton();
         loginPage.doesNotSeeLogInButton();
+    }
+
+    static Stream<Arguments> getLoginAndPassword() {
+        return Stream.of(
+                Arguments.of("Login", "Password"),
+                Arguments.of("Fedor", "Top")
+        );
     }
 
     @Description("Пробуем авторизоваться используя неправильный логин")
